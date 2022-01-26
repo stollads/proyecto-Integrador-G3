@@ -3,14 +3,14 @@
 ## Nuesto proyecto va destinado a todas esas personas las cuales consideran su masocota como parte de la familia!
 
 ### Contamos con:
-*** 
+
 1. Servicio de vetrinaria.
 2. Urgencia las 24hs.
 3. Estetita Canina.
 4. Ventas de insumos para tus mascotas.
 5. Informacion util para su cuidado.
 ***
-## Equipo de Trabajo
+## Nuestro equipo de Trabajo
 Tici Giménez, técnica  Siperioe de RRHH, de San Nicolás, me gusta escribir, investigar y el diseño web.
 ***
 ## Nuestras referencias

@@ -17,8 +17,20 @@ Agustin Parodi, recidente de San Nicolas, estudiante de CiberSeguridad y merketi
 
 Soy Alejandro Stoll. Comunicador, Creador de Contenido y Community Management. Me gusta editar, diseñar, comunicar y en la programación me está gustando más en front que el back.
 
-Soy Santiago Puntieri. Técnico electromecánico, me gusta el mercado cripto y leer graficos, y me encanta la programación
+Soy Santiago Puntieri. Técnico electromecánico, me gusta el mercado cripto y leer graficos, y me encanta la programación.
+
+Soy Manuela, trabajo como diseñadora y community manager. Me gusta la programación aunque no entiendo mucho.
 ***
+## Estructuras web
+Inicio: https://www.figma.com/file/Lp5LCFHXRicUWu4emJ5mOv/WOOF-HOME
+Carro de compras: https://www.figma.com/file/Cy0EzMMxnbthBIS3itSxi2/CARRITO-DE-COMPRAS
+Producto: https://www.figma.com/file/oGQoPQWXStJTni0jCo1tEs/DETALLE-DEL-PRODUCTO
+Registro: https://www.figma.com/file/ND0TZovbcwRn9XK4e2eaKf/FORMULARIO-DE-REGISTRO
+Paleta de colores: https://www.figma.com/file/zSrtTAHBguKhOQdUdVkGN8/MANUALDEMARCA?node-id=0%3A1
+Logo: https://www.figma.com/file/XzV7cR5CVrLmGrMpGrI8hO/BOCETOPAGINAWEBC%2FLOGO
+Login: https://www.figma.com/file/WXi5UVBZkczhb2IxovrIvq/INGRESO 
+
+
 ## Nuestras referencias
 
 ### Paginas agiles para la solicitud de turnos

@@ -23,6 +23,7 @@ Soy Manuela, trabajo como diseñadora y community manager. Me gusta la programac
 ***
 ## Estructuras web
 Inicio: https://www.figma.com/file/Lp5LCFHXRicUWu4emJ5mOv/WOOF-HOME
+
 Carro de compras: https://www.figma.com/file/Cy0EzMMxnbthBIS3itSxi2/CARRITO-DE-COMPRAS
 
 Producto: https://www.figma.com/file/oGQoPQWXStJTni0jCo1tEs/DETALLE-DEL-PRODUCTO

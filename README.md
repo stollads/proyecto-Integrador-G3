@@ -5,13 +5,19 @@
 ### Contamos con:
 
 1. Servicio de vetrinaria.
-2. Urgencia las 24hs.
+2. Urgencias las 24hs.
 3. Estetita Canina.
 4. Ventas de insumos para tus mascotas.
 5. Informacion util para su cuidado.
 ***
 ## Nuestro equipo de Trabajo
-Tici Giménez, técnica  Siperioe de RRHH, de San Nicolás, me gusta escribir, investigar y el diseño web.
+Tici Giménez, técnica Siperior de RRHH, de San Nicolás, me gusta escribir, investigar y el diseño web.
+
+Agustin Parodi, recidente de San Nicolas, estudiante de CiberSeguridad y merketing digital, insistente a una solución, interes en diseño y funcionamiento web.
+
+Soy Alejandro Stoll. Comunicador, Creador de Contenido y Community Management. Me gusta editar, diseñar, comunicar y en la programación me está gustando más en front que el back.
+
+Soy Santiago Puntieri. Técnico electromecánico, me gusta el mercado cripto y leer graficos, y me encanta la programación
 ***
 ## Nuestras referencias
 

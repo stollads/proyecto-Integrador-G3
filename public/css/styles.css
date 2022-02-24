@@ -2,13 +2,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
 
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-
 :root {
     --blanco-medio: #f5f3eb;
     --naranja: #f49a1a;
@@ -23,6 +16,14 @@
     --mochipop: 'Mochiy Pop One', sans-serif;    
     --raleway: 'Raleway', sans-serif;
 }
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 
 html {
     font-size: 62.5%;

@@ -10,6 +10,12 @@
 
 
 :root {
+    --blanco-medio: #f5f3eb;
+    --naranja: #f49a1a;
+    --naranja-claro: #f7aa2c;
+    --celeste: #b0d0cf;
+    --azul: #1c3f80;
+    --azul-claro: #222d56;
     --text-sm: 1.2em;
     --text-md: 1.6em;
     --text-lg: 1.8em;

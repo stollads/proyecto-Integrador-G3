@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+:root {
+    --text-sm: 1.2em;
+    --text-md: 1.6em;
+    --text-lg: 1.8em;
+    --title-md: 2.4em;
+    --mochipop: 'Mochiy Pop One', sans-serif;    
+    --raleway: 'Raleway', sans-serif;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: var(--mochipop);
+}
+
+
+header {
+    background-color: darkblue;
+    padding: 2em 2em 3em;
+}
+
+
+.top-header h1 {
+    color: white;
+    margin-left: 10px;
+}

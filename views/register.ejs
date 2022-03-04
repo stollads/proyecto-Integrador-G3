@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro | Mercadoliebre</title>
+    <link rel="stylesheet" href="/css/Register.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+rel="stylesheet" />
+</head>
+<body>
+    <header>
+        <div class="atraccion">
+            <picture  >
+                <img class="superior" src="img/logo-superior.jpeg" alt="Logo de Woof!">
+             </picture>
+             <picture >
+                <img class="central" src="img/logo-central.jpeg" alt="Logo de Woof!">
+             </picture>
+             <picture >
+                <img class="inferior" src="img/logo-inferior.jpeg" alt="Logo de Woof!">
+             </picture>
+
+        </div>
+        <!-- BUSCADOR
+        <div class="buscador">
+        <div class="form" action="#" method="GET">
+            <input type="text" class="input" placeholder="Buscar">
+            <div class="submit"><i class="fa fa-search"></i></div>
+        </div>
+    -->
+    </div>
+        <nav>
+
+            <ul>
+            
+                <li>
+                    <a href="/login" class="nav">Ingresá <i class="fas fa-sign-in-alt"></i></a>
+                </li>
+                <li>
+                    <a href="" class="nav">Mis Compras <i class="fas fa-shopping-basket"></i></a>
+                </li>
+                <li>
+                    <a href="" class="nav">Ayuda</a>
+                </li>
+                <li>
+                    <a href="" class="nav">Sobre Nosotros</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="burger-menu">
+            <i class="fas fa-bars"></i>
+        </div>
+    </header>
+    <main class="register">
+        <div class="registro">
+        <h3 class="registro">Creá tu cuenta aqui:</h3>
+        <div class="formulario">
+        <form action="/login" method="POST" enctype="multipart/form-data">
+            <!-- <label for="name">Ingresa tu nombre y apellido:</label> -->
+            <div class="registro">
+            <input type="text" name="name" id="name" placeholder="nombre y apellido" required minlength="2">
+            <input type="text" name="username" id="username" placeholder="nombre de usuario" required>
+        
+        <input type="email" name="email" id="email" placeholder="correo@correo.com" required>
+            
+            <input type="text" name="adress" id="adress" placeholder="Domicilio" required>
+        </div>
+    </div>
+           
+           <div class="password">
+            
+            <input type="password" name="password" placeholder="ingresa tu contraseña"required ><br>
+            <input type="password" name="repassword" placeholder="reingresa tu contraseña"required><br>
+        </div>
+        
+            <div class="buttons">
+                <input type="submit" value="Crear cuenta" class="btn">
+            </div>
+            <fieldset>
+                <div id="head2"><a class="hover-link form-style">O crea tu cuenta con:</a><div style="float:none;width:0px;position: absolute;">&nbsp;</div><ul id="output" class="velsof-sub-options ul-form-style"><li data-index=""><a type="fb" onclick="return !window.open(this.href, 'popup','width=450,height=300,left=500,top=500')" target="_blank" href="https://www.catycan.com/module/socialloginizer/facebook?type=fb" title="Facebook"><img src="http://catycan.com/modules/socialloginizer/views/img/buttons/fb_large.png"></a></li><li data-index="1"><a onclick="return !window.open(this.href, 'popup','width=500,height=500,left=500,top=500')" target="_blank" href="https://www.catycan.com/module/socialloginizer/google?type=google" type="google" title="Google"><img src="http://catycan.com/modules/socialloginizer/views/img/buttons/google_large.png"></a></li><li data-index="4"><a onclick="return !window.open(this.href, 'popup','width=500,height=500,left=500,top=500')" target="_blank" href="https://www.catycan.com/module/socialloginizer/twitter?type=tweet" type="tweet" title="Twitter"><img src="http://catycan.com/modules/socialloginizer/views/img/buttons/twitter_large.png"></a></li></ul></div>
+            </fieldset>
+        </div>
+        </form>
+        <div class="ingreso">
+			<form action="/home" method="post" class="ingreso">
+            
+          
+				<h3 class="ingreso">¿Ya estás registrado?</h3>
+				<div class="formingreso">
+					<div class="form-group">
+						<input class="is_required validate account_input form-control" data-validate="isEmail" type="email" id="email" name="email" placeholder="Correo electrónico" value="">
+					</div>
+					<div class="form-group">
+						<input class="is_required validate account_input form-control" type="password" data-validate="isPasswd" id="passwd" name="passwd" placeholder="ingresa tu contraseña" value="" required>
+					</div>
+					<p class="olvide contraseña"><a href="" title="Recuperar la contraseña" rel="nofollow" class="olvide contraseña">¿Olvidé mi contraseña?</a></p>
+					<p class="submit">
+						<input type="hidden" class="hidden" name="back" value="my-account">						<button type="submit" name="SubmitLogin" class="btningreso">
+							<span>
+								<i class="icon-lock left"></i>
+								Iniciar sesión
+							</span>
+						</button>
+					</p>
+				<div id="head"><a class="hover-link form-style">Ingresar con:</a><div style="float:none;width:0px;position: absolute;">&nbsp;</div><ul id="output" class="velsof-sub-options ul-form-style"><li data-index=""><a type="fb" onclick="return !window.open(this.href, 'popup','width=450,height=300,left=500,top=500')" target="_blank" href="https://www.catycan.com/module/socialloginizer/facebook?type=fb" title="Facebook"><img src="https://www.catycan.com/modules/socialloginizer/views/img/buttons/fb_small.png"></a></li><li data-index="1"><a onclick="return !window.open(this.href, 'popup','width=500,height=500,left=500,top=500')" target="_blank" href="https://www.catycan.com/module/socialloginizer/google?type=google" type="google" title="Google"><img src="https://www.catycan.com/modules/socialloginizer/views/img/buttons/google_small.png"></a></li><li data-index="4"><a onclick="return !window.open(this.href, 'popup','width=500,height=500,left=500,top=500')" target="_blank" href="https://www.catycan.com/module/socialloginizer/twitter?type=tweet" type="tweet" title="Twitter"><img src="https://www.catycan.com/modules/socialloginizer/views/img/buttons/twitter_small.png"></a></li></ul></div></div>
+			</form>
+		</div>
+        
+    </main>
+   
+    <footer>
+        
+        <Section class="contenido-footer">
+           
+            <h4>Categorias</h4>
+            <a href="" class="categoria">
+            <li class="categoria">Perros</li></a>
+            <a href="" class="categorias">
+            <li class="categoria">Gatos</li></a>
+            <a href="" class="categoria">
+            <li class="categoria">Aves</li></a>
+            <a href="" class="categoria">
+            <li class="categoria">Peces</li></a>
+            <a href="" class="categoria">
+            <li class="categoria">Roedores</li></a>
+            <a href="" class="categoria">
+            <li class="categoria">Reptiles</li></a>
+        
+        </Section>
+        <section class="contenido-footer">
+           <h4>Sobre Nosotros</h4>
+            <p><li>Quienes somos</li>
+            <li>Delivery</li>
+            <li>Terminos y condiciones</li>
+            </p>
+        </section>
+        <section class="contenido-footer">      
+            <h4>Servicios</h4> <a href="" class="servicio">
+            <p><li class="servicio">Guardia las 24hs</li></a>
+                <a href="" class="servicio">
+            <li class="servicio">Consejos para tu mascota</li></a>
+            <a href="" class="servicio">
+            <li class="servicio">Mi cuenta</li></a>
+            </p>
+        </section>
+        <section class="contenido-footer">   
+            <h4>Contactanos!</h4>
+            <p> <li>
+               Tel. 3476624432
+            </li>
+            <li>
+                Wpp: 3476624432
+            </li>
+            <li>
+                Email: Woof@hotmail.com
+            </li>
+            </p>
+        </section>
+        <div class="contacto">
+            <iframe style="height: 370px; border: none; margin-left: auto; margin-right: auto;" src="https://www.catycan.com/Imagenes/Contacto/Contacto.html" width="100%" height="370" frameborder="0" scrolling="no"></iframe>    
+        </div>
+    </footer>
+    <section class="Copyright">
+        <p>Copyright © Woof S.A</p>
+    </section>
+</body>
+</html>
+
+
+
+
+

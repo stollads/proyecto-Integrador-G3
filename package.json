@@ -12,5 +12,19 @@
     "express": "~4.16.1",
     "http-errors": "~1.6.3",
     "morgan": "~1.9.1"
-  }
+  },
+  "description": "***\r ## Nuesto proyecto va destinado a todas esas personas las cuales consideran su mascota como parte de la familia!",
+  "main": "app.js",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ManuMug/proyecto-Integrador-G3.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ManuMug/proyecto-Integrador-G3/issues"
+  },
+  "homepage": "https://github.com/ManuMug/proyecto-Integrador-G3#readme"
 }

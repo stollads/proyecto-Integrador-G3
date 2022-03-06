@@ -9,6 +9,7 @@
     --celeste: #b0d0cf;
     --azul: #1c3f80;
     --azul-claro: #222d56;
+    --text-smll: 1em;
     --text-sm: 1.2em;
     --text-md: 1.6em;
     --text-lg: 1.8em;
@@ -30,6 +31,25 @@ html {
     font-family: var(--mochipop);
 }
 
+body {
+    background-color: var(--blanco);
+}
+  
+h2 {
+    font-size: var(--title-md);
+}
+  
+h4 {
+    font-size: var(--text-lg);
+}
+  
+a {
+    font-size: 14px;
+}
+  
+p {
+    font-size: var(--text-sm);
+}
 
 header {
     background-color: darkblue;
@@ -44,7 +64,7 @@ footer {
 section.banner img {
     width: 100%;
     background-color: orange;
-   
+    max-width: 100%;
 }
 
 .form {
@@ -58,26 +78,31 @@ section.banner img {
 }
 
 main {
-    width: 90%;
+    width: 100%;
     margin: 0 auto;
 }
-  
+
+.products-container{
+    background-color: var(--blanco);
+}
+
 main section article {
     background-color: var(--blanco);
-    margin: 10px 0;
+    margin: 10px 10px;
 }
-  
+
+main section{
+    padding: 10px 10px;
+    background-color: var(--blanco);
+    font-size: 75%;
+}
+
 main section article:hover {
-    box-shadow: 0px 0px 10px rgb(100 100 100);
+    box-shadow: 0px 0px 20px rgb(100 100 100);
 }
-  
+ 
 main section article img {
     width: 100%;
-}
-  
-h2,
-  .description {
-    color: var(--gris-oscuro);
 }
   
 .price {

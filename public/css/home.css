@@ -10,7 +10,6 @@
     --celeste: #b0d0cf;
     --azul: #1c3f80;
     --azul-claro: #222d56;
-    --text-smll: 1em;
     --text-sm: 1.2em;
     --text-md: 1.6em;
     --text-lg: 1.8em;
@@ -26,6 +25,9 @@
     box-sizing: border-box;
 }
 
+head.icon{
+    max-width: 100000px;
+}
 
 html {
     font-size: 62.5%;
@@ -53,12 +55,12 @@ p {
 }
 
 header {
-    background-color: darkblue;
+    background-color: var(--naranja-claro);
     padding: 2em 2em 3em;
 }
 
 footer {
-    background-color: darkblue;
+    background-color: var(--naranja-claro);
     padding: 2em 2em 3em;
 }
 
@@ -74,7 +76,7 @@ section.banner img {
 }
 
 .top-header h1 {
-    color: white;
+    color: var(--blanco);
     margin-left: 10px;
 }
 

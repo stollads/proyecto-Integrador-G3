@@ -3,6 +3,7 @@
 
 
 :root {
+    --blanco: rgb(255, 255, 255);
     --blanco-medio: #f5f3eb;
     --naranja: #f49a1a;
     --naranja-claro: #f7aa2c;
@@ -15,6 +16,7 @@
     --title-md: 2.4em;
     --mochipop: 'Mochiy Pop One', sans-serif;    
     --raleway: 'Raleway', sans-serif;
+    --letra-blanca: color:var(--blanco)
 }
 
 
@@ -28,16 +30,4 @@
 html {
     font-size: 62.5%;
     font-family: var(--mochipop);
-}
-
-
-header {
-    background-color: darkblue;
-    padding: 2em 2em 3em;
-}
-
-
-.top-header h1 {
-    color: white;
-    margin-left: 10px;
 }

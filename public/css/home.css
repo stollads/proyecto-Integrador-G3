@@ -59,6 +59,10 @@ header {
     padding: 2em 2em 3em;
 }
 
+header div img{
+    max-width: 250px;
+}
+
 footer {
     background-color: var(--naranja-claro);
     padding: 2em 2em 3em;

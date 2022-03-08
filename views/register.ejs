@@ -13,14 +13,27 @@ rel="stylesheet" />
     <header>
         <div class="atraccion">
             <picture  >
-                <img class="superior" src="img/logo-superior.jpeg" alt="Logo de Woof!">
+                <img class="superior" src="/img/Logo vertical.png" alt="Logo de Woof!">
              </picture>
-             <picture >
-                <img class="central" src="img/logo-central.jpeg" alt="Logo de Woof!">
-             </picture>
-             <picture >
-                <img class="inferior" src="img/logo-inferior.jpeg" alt="Logo de Woof!">
-             </picture>
+             
+             <nav>
+
+                <ul>
+                
+                    <li>
+                        <a href="/login" class="nav">Ingresá <i class="fas fa-sign-in-alt"></i></a>
+                    </li>
+                    <li>
+                        <a href="" class="nav">Mis Compras <i class="fas fa-shopping-basket"></i></a>
+                    </li>
+                    <li>
+                        <a href="" class="nav">Ayuda</a>
+                    </li>
+                    <li>
+                        <a href="" class="nav">Sobre Nosotros</a>
+                    </li>
+                </ul>
+            </nav>
 
         </div>
         <!-- BUSCADOR
@@ -31,24 +44,7 @@ rel="stylesheet" />
         </div>
     -->
     </div>
-        <nav>
-
-            <ul>
-            
-                <li>
-                    <a href="/login" class="nav">Ingresá <i class="fas fa-sign-in-alt"></i></a>
-                </li>
-                <li>
-                    <a href="" class="nav">Mis Compras <i class="fas fa-shopping-basket"></i></a>
-                </li>
-                <li>
-                    <a href="" class="nav">Ayuda</a>
-                </li>
-                <li>
-                    <a href="" class="nav">Sobre Nosotros</a>
-                </li>
-            </ul>
-        </nav>
+      
         <div class="burger-menu">
             <i class="fas fa-bars"></i>
         </div>
@@ -60,12 +56,12 @@ rel="stylesheet" />
         <form action="/login" method="POST" enctype="multipart/form-data">
             <!-- <label for="name">Ingresa tu nombre y apellido:</label> -->
             <div class="registro">
-            <input type="text" name="name" id="name" placeholder="nombre y apellido" required minlength="2">
-            <input type="text" name="username" id="username" placeholder="nombre de usuario" required>
+            <input type="text" name="name" id="datos" placeholder="nombre y apellido" required minlength="2">
+            <input type="text" name="username" id="datos" placeholder="nombre de usuario" required>
         
-        <input type="email" name="email" id="email" placeholder="correo@correo.com" required>
+        <input type="email" name="email" id="datos" placeholder="correo@correo.com" required>
             
-            <input type="text" name="adress" id="adress" placeholder="Domicilio" required>
+            <input type="text" name="adress" id="datos" placeholder="Domicilio" required>
         </div>
     </div>
            
@@ -79,7 +75,7 @@ rel="stylesheet" />
                 <input type="submit" value="Crear cuenta" class="btn">
             </div>
             <fieldset>
-                <div id="head2"><a class="hover-link form-style">O crea tu cuenta con:</a><div style="float:none;width:0px;position: absolute;">&nbsp;</div><ul id="output" class="velsof-sub-options ul-form-style"><li data-index=""><a type="fb" onclick="return !window.open(this.href, 'popup','width=450,height=300,left=500,top=500')" target="_blank" href="https://www.catycan.com/module/socialloginizer/facebook?type=fb" title="Facebook"><img src="http://catycan.com/modules/socialloginizer/views/img/buttons/fb_large.png"></a></li><li data-index="1"><a onclick="return !window.open(this.href, 'popup','width=500,height=500,left=500,top=500')" target="_blank" href="https://www.catycan.com/module/socialloginizer/google?type=google" type="google" title="Google"><img src="http://catycan.com/modules/socialloginizer/views/img/buttons/google_large.png"></a></li><li data-index="4"><a onclick="return !window.open(this.href, 'popup','width=500,height=500,left=500,top=500')" target="_blank" href="https://www.catycan.com/module/socialloginizer/twitter?type=tweet" type="tweet" title="Twitter"><img src="http://catycan.com/modules/socialloginizer/views/img/buttons/twitter_large.png"></a></li></ul></div>
+                <div id="head2"><a class="hover-link form-style">O crea tu cuenta con:</a><div style="float:none;width:0px;position: absolute;">&nbsp;</div><ul id="output" class="redes"><li class="redes   " data-index=""><a type="fb" onclick="return !window.open(this.href, 'popup','width=450,height=300,left=500,top=500')" target="_blank" href="https://www.catycan.com/module/socialloginizer/facebook?type=fb" title="Facebook"><img class="redes" src="http://catycan.com/modules/socialloginizer/views/img/buttons/fb_large.png"></a></li><li class="redes" data-index="1"><a onclick="return !window.open(this.href, 'popup','width=500,height=500,left=500,top=500')" target="_blank" href="https://www.catycan.com/module/socialloginizer/google?type=google" type="google" title="Google"><img class="redes" src="http://catycan.com/modules/socialloginizer/views/img/buttons/google_large.png"></a></li><li class="redes" data-index="4"><a onclick="return !window.open(this.href, 'popup','width=500,height=500,left=500,top=500')" target="_blank" href="https://www.catycan.com/module/socialloginizer/twitter?type=tweet" type="tweet" title="Twitter"><img class="redes" src="http://catycan.com/modules/socialloginizer/views/img/buttons/twitter_large.png"></a></li></ul></div>
             </fieldset>
         </div>
         </form>
@@ -104,7 +100,7 @@ rel="stylesheet" />
 							</span>
 						</button>
 					</p>
-				<div id="head"><a class="hover-link form-style">Ingresar con:</a><div style="float:none;width:0px;position: absolute;">&nbsp;</div><ul id="output" class="velsof-sub-options ul-form-style"><li data-index=""><a type="fb" onclick="return !window.open(this.href, 'popup','width=450,height=300,left=500,top=500')" target="_blank" href="https://www.catycan.com/module/socialloginizer/facebook?type=fb" title="Facebook"><img src="https://www.catycan.com/modules/socialloginizer/views/img/buttons/fb_small.png"></a></li><li data-index="1"><a onclick="return !window.open(this.href, 'popup','width=500,height=500,left=500,top=500')" target="_blank" href="https://www.catycan.com/module/socialloginizer/google?type=google" type="google" title="Google"><img src="https://www.catycan.com/modules/socialloginizer/views/img/buttons/google_small.png"></a></li><li data-index="4"><a onclick="return !window.open(this.href, 'popup','width=500,height=500,left=500,top=500')" target="_blank" href="https://www.catycan.com/module/socialloginizer/twitter?type=tweet" type="tweet" title="Twitter"><img src="https://www.catycan.com/modules/socialloginizer/views/img/buttons/twitter_small.png"></a></li></ul></div></div>
+				<div id="head"><a class="hover-link form-style">Ingresar con:</a><div style="float:none;width:0px;position: absolute;">&nbsp;</div><ul id="output" class="velsof-sub-options ul-form-style"><li class="redes" data-index=""><a type="fb" onclick="return !window.open(this.href, 'popup','width=450,height=300,left=500,top=500')" target="_blank" href="https://www.catycan.com/module/socialloginizer/facebook?type=fb" title="Facebook"><img class="redesingreso" src="https://www.catycan.com/modules/socialloginizer/views/img/buttons/fb_small.png"></a></li><li class="redes" data-index="1"><a onclick="return !window.open(this.href, 'popup','width=500,height=500,left=500,top=500')" target="_blank" href="https://www.catycan.com/module/socialloginizer/google?type=google" type="google" title="Google"><img class="redesingreso" src="https://www.catycan.com/modules/socialloginizer/views/img/buttons/google_small.png"></a></li><li class="redes" data-index="4"><a onclick="return !window.open(this.href, 'popup','width=500,height=500,left=500,top=500')" target="_blank" href="https://www.catycan.com/module/socialloginizer/twitter?type=tweet" type="tweet" title="Twitter"><img class="redesingreso" src="https://www.catycan.com/modules/socialloginizer/views/img/buttons/twitter_small.png"></a></li></ul></div></div>
 			</form>
 		</div>
         

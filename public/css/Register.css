@@ -1,37 +1,40 @@
-@import url('https://fonts.googleapis.com/css2? family= PT+Sans:ital,wght@1,700 & family= Roboto:ital,wght@0,300;0,400;1,500;1,700 & display= intercambio');
+@import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
 :root {
-    /*Colors*/
-    --amarillo: #EAC926;
-    --azul: #03264C;
-    --celeste: #1259c3;
-    --gris-oscuro: #666;
-    --gris-claro: #ebebeb;
-    --verde: #39b54a;
-    /*Font Family*/
-    --roboto: 'Roboto', sans-serif;
-    /*Font Sizes*/
-    --text: 12px;
-    --title: 24px;
-    --text-lg: 18px;
-    --text-md: 16px;
+    --blanco-medio: #f5f3eb;
+    --naranja: #f49a1a;
+    --naranja-claro: #f7aa2c;
+    --celeste: #b0d0cf;
+    --azul: #1c3f80;
+    --azul-fuerte: #222d56;
+    --text-sm: 0.5em;
+    --text-md: 1.2em;
+    --text-lg: 1.5em;
+    --title-md: 2.4em;
+    --mochipop: 'Mochiy Pop One', sans-serif;    
+    --raleway: 'Raleway', sans-serif;
 }
+
 *{
-    font-family: cursive;
-    font-size: var(--text);
+    font-family: var(--mochipop);
+   
+    
 }
 /*BOOODDYY*/
-/*
+
 body{
-    background-color: rgba(255 173 50);
+    background-color: #d9d4ff;
 }
 
 /*HEADER*/
 
 header{
-    width: 100%;
-    display: flex;
+   display: flex; 
+   width: 100%;   
+    height: 7em;
     padding: 1em 1em 2em;
-    background-image: url("/img/Fondo.png");
+    background-color:var(--azul-fuerte);
 }
 div.top-header p{
     text-align: center;
@@ -49,8 +52,8 @@ img{
     background-color: #002356;
     max-height: 130px;
     margin-top: -3px;
-    width: 80%;
-    padding: 0 0 4px 0;
+    width: 30%;
+    
 }
 img.inferior{
     
@@ -58,33 +61,29 @@ img.inferior{
 }
 
 div.atraccion{
-   width: 50%;
-   max-width: 300px;
+    display: -webkit-inline-box;
+   width: 100%;
 }
 div.buscador{
     margin-top: -95px;
     display: flex;
 }
 nav{
-    width: 100%;
-
+    width:70%;
+    margin-left: auto;
    display: flex;
    align-items: flex-end;
 }
 a.nav{
-    color: black;
+    color: rgb(240, 240, 240);
     text-decoration: underline;
 }
 
 ul {
-   
     display: flex;
-    
-    justify-content: space-around;
-    
     flex-grow: 1;
-    font-size: 12px;
-
+    
+    justify-content: space-evenly;
 }
 li{
    list-style: none;
@@ -96,7 +95,7 @@ input.interes{
 
 
 a{
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: var(--mochipop);
     
         text-decoration: none;
         color: #5a5a5a;
@@ -162,12 +161,12 @@ button.btningreso{
     border-radius: 8px;
     width: 80%;
     justify-content: center;
-    background-color: rgb(255, 177, 74);
-    color: #001026;
+    background-color: var(--azul) ;
+    color: var(--celeste);
 }
 button.btningreso:hover{
     transition: 0.5s ease;
-    background-color:  rgb(131, 78, 8);;
+    background-color:  var(--azul-fuerte);
      cursor: pointer;
 }
 
@@ -191,6 +190,7 @@ div.submit:hover{
 
 /*MAIN*/
 
+
 main.register{
     display: flex;
     padding-top: 1.6em;
@@ -207,6 +207,26 @@ h3.registro{
     text-align: center;
     margin: 0 auto;
     
+}
+.redesingreso{
+    max-width: 55px;
+    border-radius: 20px;
+}
+li.redes{
+    margin-bottom: 5px;
+    width: 100%;
+}
+img.redes{
+    border-radius: 13px;
+    width: 80%;
+}
+ul#output.redes{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+
+
 }
 h3.ingreso{
     font-size: var(--text-md);
@@ -259,12 +279,12 @@ div.buttons{
 }
 .btn{
   justify-content: center;
-    background-color: rgb(255, 177, 74);
-    color: #001026;
+    background-color: var(--azul);
+    color: var(--celeste);
 }
     .btn:hover{
         transition: 0.5s ease;
-   background-color:  rgb(131, 78, 8);;
+   background-color:  var(--azul-fuerte);
     cursor: pointer;}
     
 
@@ -282,7 +302,7 @@ footer{
     margin: 0 auto;
     padding: 40px 10px 20px;
     display: flex;
-    background-color: #d9d4d4;
+    background-color: var(--celeste);
     align-items: flex-start;
     
 }
@@ -290,7 +310,7 @@ div.contacto{
     border-left: 1px solid;
 }
 p{
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: var(--mochipop);
     text-decoration: none;
     color: #5a5a5a;
 }
@@ -305,7 +325,7 @@ section.Copyright{
 }
 
 li{
-    font-family: Arial, Helvetica, sans-serif;
+    font-family:var(--mochipop);
     text-decoration: none;
     color: #5a5a5a;
 }
@@ -323,3 +343,4 @@ li{
         flex-wrap: wrap;
 }
 }
+

@@ -3,13 +3,13 @@
 
 
 :root {
+    --blanco: rgb(255, 255, 255);
     --blanco-medio: #f5f3eb;
     --naranja: #f49a1a;
     --naranja-claro: #f7aa2c;
     --celeste: #b0d0cf;
     --azul: #1c3f80;
     --azul-claro: #222d56;
-    --text-smll: 1em;
     --text-sm: 1.2em;
     --text-md: 1.6em;
     --text-lg: 1.8em;
@@ -25,6 +25,9 @@
     box-sizing: border-box;
 }
 
+head.icon{
+    max-width: 100000px;
+}
 
 html {
     font-size: 62.5%;
@@ -52,12 +55,16 @@ p {
 }
 
 header {
-    background-color: darkblue;
+    background-color: var(--naranja-claro);
     padding: 2em 2em 3em;
 }
 
+header div img{
+    max-width: 250px;
+}
+
 footer {
-    background-color: darkblue;
+    background-color: var(--naranja-claro);
     padding: 2em 2em 3em;
 }
 
@@ -73,7 +80,7 @@ section.banner img {
 }
 
 .top-header h1 {
-    color: white;
+    color: var(--blanco);
     margin-left: 10px;
 }
 
@@ -83,17 +90,17 @@ main {
 }
 
 .products-container{
-    background-color: var(--blanco);
+    background-color: var(--blanco-medio);
 }
 
-main section article {
-    background-color: var(--blanco);
+main section div article {
+    background-color: var(--blanco) !important;
     margin: 10px 10px;
 }
 
 main section{
     padding: 10px 10px;
-    background-color: var(--blanco);
+    background-color: var(--blanco-medio);
     font-size: 75%;
 }
 
@@ -125,7 +132,7 @@ main section article:hover .description {
 main section article i, .discount {
     color: var(--verde);
 }
-  
+/*
 main section article i {
     font-size: var(--text-md);
     border: 1px solid var(--verde);
@@ -139,7 +146,7 @@ main section article i {
     right: 20px;
     top: -15px;
     transition: transform 0.3s ease-in;
-}
+}*/
   
 main section article:hover i {
     transform: rotate(-90deg);
@@ -151,7 +158,7 @@ main section h3 {
   
 article div.product-card {
     width: 15%;
-    border: 1px solid var(--gris-claro);
+    border: 1px solid var(--blanco);
     padding: 15px;
     position: relative;
 }

@@ -1,9 +1,12 @@
-var express = require('express');
-var router = express.Router();
+// ************ Require's ************
+const express = require('express');
+const router = express.Router();
 
-/* GET users listing. */
-router.get('/', function(req, res, next) {
-  res.send('respond with a resource');
-});
+// ************ Controller Require ************
+const mainController = require('../controllers/mainControllers');
+
+router.get('/', mainControllers.index); 
+router.get('/search', mainControllers.search); 
 
 module.exports = router;
+

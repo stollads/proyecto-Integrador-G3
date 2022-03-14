@@ -132,7 +132,7 @@ main section article:hover .description {
 main section article i, .discount {
     color: var(--verde);
 }
-/*
+
 main section article i {
     font-size: var(--text-md);
     border: 1px solid var(--verde);
@@ -146,7 +146,7 @@ main section article i {
     right: 20px;
     top: -15px;
     transition: transform 0.3s ease-in;
-}*/
+}
   
 main section article:hover i {
     transform: rotate(-90deg);

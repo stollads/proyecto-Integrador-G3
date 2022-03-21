@@ -30,7 +30,7 @@ head.icon{
 }
 
 html {
-    font-size: 62.5%;
+
     font-family: var(--mochipop);
 }
 
@@ -46,9 +46,6 @@ h4 {
     font-size: var(--text-lg);
 }
   
-a {
-    font-size: 14px;
-}
   
 p {
     font-size: var(--text-sm);

@@ -12,38 +12,7 @@ rel="stylesheet" />
 </head>
 <body>
     <header>
-        <div class="atraccion">
-            <picture  >
-                <img class="superior" src="/img/Logo vertical.png" alt="Logo de Woof!">
-             </picture>
-             
-             <nav>
-
-                <ul>
-                
-                    <li>
-                        <a href="/login" class="nav">Ingresá <i class="fas fa-sign-in-alt"></i></a>
-                    </li>
-                    <li>
-                        <a href="" class="nav">Mis Compras <i class="fas fa-shopping-basket"></i></a>
-                    </li>
-                    <li>
-                        <a href="" class="nav">Ayuda</a>
-                    </li>
-                    <li>
-                        <a href="" class="nav">Sobre Nosotros</a>
-                    </li>
-                </ul>
-            </nav>
-
-        </div>
-        <!-- BUSCADOR
-        <div class="buscador">
-        <div class="form" action="#" method="GET">
-            <input type="text" class="input" placeholder="Buscar">
-            <div class="submit"><i class="fa fa-search"></i></div>
-        </div>
-    -->
+        <%-include('partials/header.ejs')%>
     </div>
     
     </header>
@@ -82,56 +51,7 @@ rel="stylesheet" />
     </main>
    
     <footer>
-        
-        <Section class="contenido-footer">
-           
-            <h4>Categorias</h4>
-            <a href="" class="categoria">
-            <li class="categoria">Perros</li></a>
-            <a href="" class="categorias">
-            <li class="categoria">Gatos</li></a>
-            <a href="" class="categoria">
-            <li class="categoria">Aves</li></a>
-            <a href="" class="categoria">
-            <li class="categoria">Peces</li></a>
-            <a href="" class="categoria">
-            <li class="categoria">Roedores</li></a>
-            <a href="" class="categoria">
-            <li class="categoria">Reptiles</li></a>
-        
-        </Section>
-        <section class="contenido-footer">
-           <h4>Sobre Nosotros</h4>
-            <p><li>Quienes somos</li>
-            <li>Delivery</li>
-            <li>Terminos y condiciones</li>
-            </p>
-        </section>
-        <section class="contenido-footer">      
-            <h4>Servicios</h4> <a href="" class="servicio">
-            <p><li class="servicio">Guardia las 24hs</li></a>
-                <a href="" class="servicio">
-            <li class="servicio">Consejos para tu mascota</li></a>
-            <a href="" class="servicio">
-            <li class="servicio">Mi cuenta</li></a>
-            </p>
-        </section>
-        <section class="contenido-footer">   
-            <h4>Contactanos!</h4>
-            <p> <li>
-               Tel. 3476624432
-            </li>
-            <li>
-                Wpp: 3476624432
-            </li>
-            <li>
-                Email: Woof@hotmail.com
-            </li>
-            </p>
-        </section>
-        <div class="contacto">
-            <iframe style="height: 370px; border: none; margin-left: auto; margin-right: auto;" src="https://www.catycan.com/Imagenes/Contacto/Contacto.html" width="100%" height="370" frameborder="0" scrolling="no"></iframe>    
-        </div>
+        <%-include('partials/footer.ejs')%>
     </footer>
     <section class="Copyright">
         <p>Copyright © Woof S.A</p>

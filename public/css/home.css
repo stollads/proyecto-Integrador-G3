@@ -54,10 +54,7 @@ p {
     font-size: var(--text-sm);
 }
 
-header {
-    background-color: var(--naranja-claro);
-    padding: 2em 2em 3em;
-}
+
 
 header div img{
     max-width: 250px;

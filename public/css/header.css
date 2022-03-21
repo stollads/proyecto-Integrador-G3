@@ -176,4 +176,22 @@ div.submit:hover{
     background-color: rgb(168, 168, 235)
 }
 
+@media (max-width: 513px){
+    ul{
+        flex-direction: column;
+        
+    }
+}
+
+
+     
+   
+   
+    
+@media (min-width: 769px){
+    footer { flex-direction: row;
+        flex-wrap: wrap;
+}
+}
+
  

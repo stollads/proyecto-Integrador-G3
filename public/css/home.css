@@ -37,19 +37,6 @@ html {
 body {
     background-color: var(--blanco);
 }
-  
-h2 {
-    font-size: var(--title-md);
-}
-  
-h4 {
-    font-size: var(--text-lg);
-}
-  
-  
-p {
-    font-size: var(--text-sm);
-}
 
 
 

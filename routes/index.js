@@ -1,23 +1,16 @@
 var express = require('express');
 var router = express.Router();
-
+var controllers = require ("../controllers/mainControllers");
 /* GET home page. */
-router.get('/', function(req, res, next) {
-  res.render('nada', { title: 'Express' });
-});
-router.get("/register", function (req,res,next){
-  res.render("register", {title: "register"})
-});
+router.get('/', controllers.index);
 
-router.get("/login", function(req, res, next){
-  res.render("login", {title: "login"})
-});
-router.get("/carrito", function(req, res, next){
-  res.render("carrito", {title: "carrito"})
-});
-router.get("/detalle", function(req, res, next){
-  res.render("detalle", {title: "detalle"})
-});
+router.get("/register", controllers.registro);
+
+router.get("/login", controllers.login);
+
+router.get("/carrito",controllers.carrito );
+
+router.get("/detalleProducto", controllers.carrito );
 /*
 router.get("/:id/edit", controlers.edit);
 

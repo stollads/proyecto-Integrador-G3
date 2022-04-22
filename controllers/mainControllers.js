@@ -15,14 +15,14 @@ const controllers = {
     detalleProducto: function(req, res, next){
         res.render("detalle", {title: "detalle"})
     },
-    detail: (req, res) => {
+    /*detail: (req, res) => {
       let id = req.params.id
       let product = products.find(product => product.id == id);
       res.render('detail' , {
         product,
         toThousand
       })
-    },
+    },*/
 
 }
 module.exports = controllers;

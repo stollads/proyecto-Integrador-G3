@@ -3,6 +3,7 @@ const path = require('path');
 const cookieParser = require('cookie-parser');
 const logger = require('morgan');
 const express = require('express');
+const router = express.Router();
 
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
@@ -18,6 +19,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
+app.use(router)
 
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
@@ -28,6 +30,10 @@ app.use(function(req, res, next) {
 });
 
 
+app.use((req,res,next)=>{
+  res.status(404).render("not-found")
+})
+
 
 // error handler
 app.use(function(err, req, res, next) {
@@ -37,7 +43,7 @@ app.use(function(err, req, res, next) {
 
   // render the error page
   res.status(err.status || 500);
-  res.render('home');
+  res.render('not-found');
   
 });
 

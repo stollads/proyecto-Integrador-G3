@@ -1,13 +1,53 @@
-<div class="formulario">
-    <form action="/login" method="POST" enctype="multipart/form-data">
-        <!-- <label for="name">Ingresa tu nombre y apellido:</label> -->
-        <div class="registro">
-        <input type="text" name="name" id="datos" placeholder="nombre y apellido" required minlength="2">
-        <input type="text" name="username" id="datos" placeholder="nombre de usuario" required>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WOOF! Registro!</title>
+    <link rel="stylesheet" href="/css/Register.css">
+    <link rel="icon" href="/img/Fondo.png">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+rel="stylesheet" />
+</head>
+<body>
+    <header>
+        <%-include('partials/header.ejs')%>
+    </div>
     
-    <input type="email" name="email" id="datos" placeholder="correo@correo.com" required>
-        
-        <input type="text" name="adress" id="datos" placeholder="Domicilio" required>
+    </header>
+    <main class="register">
+        <div class="registro">
+        <h3 class="registro">Logeate aqui:</h3>
+    
+    <div class="formulario">
+        <form action="/login" method="POST" enctype="multipart/form-data">
+        <input type="email" name="email" id="datos" placeholder="correo@correo.com" required>
     </div>
 
+
+    </div>
+           
+           <div class="password">
+            
+            <input type="password" name="password" placeholder="ingresa tu contraseña"required ><br>
+        </div>
+        
+            <div class="buttons">
+                <input type="submit" value="Crear cuenta" class="btn">
+            </div>
+            
+        </div>
+        </form>
+        
+    </main>
+   
+    <footer>
+        <%-include('partials/footer.ejs')%>
+    </footer>
+    <section class="Copyright">
+        <p>Copyright © Woof S.A</p>
+    </section>
+</body>
+</html>
 

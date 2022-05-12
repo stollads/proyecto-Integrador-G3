@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WOOF! Registro!</title>
+    <link rel="stylesheet" href="/css/Register.css">
+    <link rel="icon" href="/img/Fondo.png">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+</head>
+
+<body>
+    <header>
+        <%-include('partials /header.ejs')%>
+            </div>
+
+    </header>
+    <main class="register">
+        <div class="registro">
+            <h3 class="registro">Crea un nuevo producto:</h3>
+
+            <div class="formulario">
+                <form action="/products/create" method="POST" enctype="multipart/form-data">
+                    <div class="registro">
+                        <input type="text" name="name" id="name" placeholder="Nombre de producto" required
+                            minlength="2">
+                        <input type="number" name="price" id="price" placeholder="Precio" required>
+                        <input type="number" name="discount" id="discount" placeholder="Descuento" required>
+                        <input type="text" name="category" id="category" placeholder="Categoria" required>
+                        <textarea name="description" id="description"></textarea>
+                        <input type="file" name="image" id="image" placeholder="Imagen" required>
+                    </div>
+
+
+            </div>
+        </div>
+
+        <div class="buttons">
+            <input type="submit" value="Crear cuenta" class="btn">
+        </div>
+
+        </form>
+
+    </main>
+
+    <footer>
+        <%-include('partials /footer.ejs')%>
+    </footer>
+    <section class="Copyright">
+        <p>Copyright © Woof S.A</p>
+    </section>
+</body>
+
+</html>

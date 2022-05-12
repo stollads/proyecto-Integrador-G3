@@ -5,7 +5,12 @@ const productsFilePath = path.join(__dirname, '../data/productsDataBase.json');
 const products = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'));
 
 const controllers = {
-  index:  function(req, res, next) {           //agregar forEach para tarjeta de productos en ejs
-    res.render('home', {products})}
+    registro: function (req,res,next) {
+        res.render("register", {title: "register"})
+      },
+
+    login: function(req, res, next){
+      res.render("login", {title: "login"})
+    },
 }
 module.exports = controllers;

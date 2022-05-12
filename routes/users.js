@@ -1,12 +1,13 @@
-// ************ Require's ************
-const express = require('express');
-const router = express.Router();
+var express = require('express');
+var router = express.Router();
+var controllers = require ("../controllers/usersControllers");
+/* GET home page. */
 
-// ************ Controller Require ************
-/*const mainController = require('../controllers/mainControllers');
+router.get("/register", controllers.registro);
 
-router.get('/', mainControllers.index); 
-router.get('/search', mainControllers.search); */
+router.get("/login", controllers.login);
+
+//FALTA LA VISTA DE PERFIL
 
 module.exports = router;
 

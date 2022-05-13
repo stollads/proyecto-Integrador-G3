@@ -13,41 +13,31 @@ rel="stylesheet" />
 <body>
     <header>
         <%-include('partials/header.ejs')%>
-    </div>
     
-    </header>
+    </header
+    >
     <main class="register">
         <div class="registro">
         <h3 class="registro">Creá tu cuenta aqui:</h3>
     
-    <div class="formulario">
-        <form action="/users/register" method="POST" enctype="multipart/form-data">
-            <!-- <label for="name">Ingresa tu nombre y apellido:</label> -->
-            <div class="registro">
-            <input type="text" name="name" id="datos" placeholder="nombre y apellido" required minlength="2">
-            <input type="text" name="username" id="datos" placeholder="nombre de usuario" required>
-        
-        <input type="email" name="email" id="datos" placeholder="correo@correo.com" required>
+        <div class="formulario">
+            <form action="/users/register" method="POST" enctype="multipart/form-data">
+                <!-- <label for="name">Ingresa tu nombre y apellido:</label> -->
+                <div class="registro">
+                    <input type="text" name="name" id="datos" placeholder="nombre y apellido" required minlength="2">
+                    <input type="text" name="username" id="datos" placeholder="nombre de usuario" required>
             
-            <input type="text" name="adress" id="datos" placeholder="Domicilio" required>
-        </div>
+                    <input type="email" name="email" id="datos" placeholder="correo@correo.com" required>
+                
+                    <input type="text" name="adress" id="datos" placeholder="Domicilio" required>
+                </div>   
 
-
-    </div>
-           
-           <div class="password">
+                <div class="buttons">
+                    <input type="submit" value="Crear cuenta" class="btn">
+                </div>
             
-            <input type="password" name="password" placeholder="ingresa tu contraseña"required ><br>
-            <input type="password" name="repassword" placeholder="reingresa tu contraseña"required><br>
+            </form>
         </div>
-        
-            <div class="buttons">
-                <input type="submit" value="Crear cuenta" class="btn">
-            </div>
-            
-        </div>
-        </form>
-        
     </main>
    
     <footer>

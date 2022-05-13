@@ -16,7 +16,7 @@ const controllers = {
       })
     },
     createForm: (req,res) => {
-      res.render("productCreate",)
+      res.render("productCreate")
     },
     processCreate: (req,res)=>{
       if(req.file){

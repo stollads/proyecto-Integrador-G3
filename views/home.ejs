@@ -20,7 +20,7 @@
             <h2>Productos</h2>
             <div class="products-container">
                 <article>
-                    <img src="/img/Producto_prueba.jpg" alt="">
+                    <img src="/img/Producto.jpg" alt="">
                     <div class="product-card">
                         <i class="fas fa-truck">Reciclado</i>
                         <div class="flex-row">
@@ -31,7 +31,7 @@
                     </div>
                 </article>
                 <article>
-                    <img src="/img/Producto_prueba.jpg" alt="">
+                    <img src="/img/Producto.jpg" alt="">
                     <div class="product-card">
                         <i class="fas fa-truck"></i>
                         <div class="flex-row">
@@ -42,7 +42,7 @@
                     </div>
                 </article>
                 <article>
-                    <img src="/img/Producto_prueba.jpg" alt="">
+                    <img src="/img/Producto.jpg" alt="">
                     <div class="product-card">
                         <i class="fas fa-truck"></i>
                         <div class="flex-row">
@@ -53,7 +53,7 @@
                     </div>
                 </article>
                 <article>
-                    <img src="/img/Producto_prueba.jpg" alt="">
+                    <img src="/img/Producto.jpg" alt="">
                     <div class="product-card">
                         <i class="fas fa-truck"></i>
                         <div class="flex-row">
@@ -64,7 +64,7 @@
                     </div>
                 </article>
                 <article>
-                    <img src="/img/Producto_prueba.jpg" alt="">
+                    <img src="/img/Producto.jpg" alt="">
                     <div class="product-card">
                         <i class="fas fa-truck"></i>
                         <div class="flex-row">
@@ -75,7 +75,7 @@
                     </div>
                 </article>
                 <article>
-                    <img src="/img/Producto_prueba.jpg" alt="">
+                    <img src="/img/Producto.jpg" alt="">
                     <div class="product-card">
                         <i class="fas fa-truck"></i>
                         <div class="flex-row">
@@ -87,7 +87,7 @@
                 </article>
                 </article>
                 <article>
-                    <img src="/img/Producto_prueba.jpg" alt="">
+                    <img src="/img/Producto.jpg" alt="">
                     <div class="product-card">
                         <i class="fas fa-truck"></i>
                         <div class="flex-row">
@@ -98,7 +98,7 @@
                     </div>
                 </article>
                 <article>
-                    <img src="/img/Producto_prueba.jpg" alt="">
+                    <img src="/img/Producto.jpg" alt="">
                     <div class="product-card">
                         <i class="fas fa-truck"></i>
                         <div class="flex-row">
@@ -109,6 +109,22 @@
                     </div>
                 </article>
             </div>  
+        </section>
+        <h1>SEPARADOR</h1>
+        <section>
+            <div class="products-container">
+                
+                <% products.forEach(product => { %>
+                    <div>
+                        <img src="/img/products/<%= product.image %>" alt="">
+                        <div>
+                            <h2><%= product.name %></h2>
+                            <h2><%= product.price %></h2>
+                        </div>  
+                    </div>
+                    <% }) %>
+                
+            </div>
         </section>
     </main>
     <section class="banner">

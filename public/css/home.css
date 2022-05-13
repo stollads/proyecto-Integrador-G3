@@ -147,6 +147,14 @@ article div.product-card {
         justify-content: space-between;
         align-items: flex-start;
     }
+    .products-container div img {
+        display: flex;
+        gap: 10px;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: flex-start;
+        max-width: 400px;
+    }
     
     .products-container article {
         max-width: 45%;

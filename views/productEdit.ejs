@@ -14,43 +14,38 @@
 <body>
     <header>
         <%-include('partials/header.ejs')%>
-            </div>
-
     </header>
     <main class="register">
         <div class="registro">
-            <h3 class="registro">Crea un nuevo producto:</h3>
-
+            <h3 class="registro">Editar producto: <%= product.name %></h3>
             <div class="formulario">
                 <form action="/products/edit/<%= product.id %>?_method=PUT" method="POST" enctype="multipart/form-data">
                     <div class="registro">
-                        <input type="text" name="name" id="name" placeholder="Nombre de producto" required
-                            minlength="2">
-                        <input type="number" name="price" id="price" placeholder="Precio" required value=<%= product.price %>>
-                        <input type="number" name="discount" id="discount" placeholder="Descuento" required>
-                        <input type="text" name="category" id="category" placeholder="Categoria" required>
-                        <input type="text" name="description" id="description" placeholder="Descripcion" required>
-                        <input type="file" name="image" id="image" placeholder="Imagen" required>
+                        <input type="text" name="name" id="name" placeholder="Nombre de producto" required minlength="2"
+                            value=<%=product.name %>>
+                        <input type="number" name="price" id="price" placeholder="Precio" required
+                            value=<%=product.price %>>
+                        <input type="number" name="discount" id="discount" placeholder="Descuento" required
+                            value=<%=product.discount %>>
+                        <input type="text" name="category" id="category" placeholder="Categoria" required
+                            value=<%=product.category %>>
+                        <input type="text" name="description" id="description" placeholder="Descripcion" required
+                            value=<%=product.description %>>
+                        <input type="file" name="image" id="image" placeholder="Imagen">
                     </div>
-
-
+                
             </div>
         </div>
 
         <div class="buttons">
-            <input type="submit" value="Crear cuenta" class="btn">
+            <input type="submit" value="Editar un Producto" class="btn">
         </div>
-
-        </form>
-
+                </form>
     </main>
 
     <footer>
         <%-include('partials/footer.ejs')%>
     </footer>
-    <section class="Copyright">
-        <p>Copyright © Woof S.A</p>
-    </section>
 </body>
 
 </html>

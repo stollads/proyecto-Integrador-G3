@@ -13,41 +13,30 @@ rel="stylesheet" />
 <body>
     <header>
         <%-include('partials/header.ejs')%>
-    </div>
-    
     </header>
     <main class="register">
         <div class="registro">
-        <h3 class="registro">Logeate aqui:</h3>
+            <h3 class="registro">Logeate aqui:</h3>
+        </div>
     
-    <div class="formulario">
-        <form action="/login" method="POST" enctype="multipart/form-data">
-        <input type="email" name="email" id="datos" placeholder="correo@correo.com" required>
-    </div>
-
-
-    </div>
-           
-           <div class="password">
-            
+        <div class="formulario">
+            <form action="/login" method="POST" enctype="multipart/form-data">
+            <input type="email" name="email" id="datos" placeholder="correo@correo.com" required>
+        </div>
+   
+        <div class="password">
             <input type="password" name="password" placeholder="ingresa tu contraseña"required ><br>
         </div>
         
-            <div class="buttons">
-                <input type="submit" value="Crear cuenta" class="btn">
-            </div>
-            
+        <div class="buttons">
+            <input type="submit" value="Crear cuenta" class="btn">
         </div>
-        </form>
-        
+
     </main>
    
     <footer>
         <%-include('partials/footer.ejs')%>
     </footer>
-    <section class="Copyright">
-        <p>Copyright © Woof S.A</p>
-    </section>
 </body>
 </html>
 

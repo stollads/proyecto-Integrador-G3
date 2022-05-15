@@ -6,9 +6,16 @@ const productsFilePath = path.join(__dirname, '../data/productsDataBase.json');
 const products = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'));
 
 const controllers = {
+  /* Renderizado de Listado de productos */
+  productsList: (req, res) => {
+    const products = JSON.parse(fs.readFileSync(productsFilePath, "utf-8"));
+    res.render('products', { products })
+  },
+  /* Renderizado de carrito de compras */
   carrito: function (req, res, next) {
     res.render("cart", { title: "carrito" })
   },
+  /* Renderizado de Detalle de un producto */
   productDetail: (req, res) => {
     let id = req.params.id
     let product = products.find(product => product.id == id);
@@ -16,9 +23,11 @@ const controllers = {
       product
     })
   },
+  /* Renderizado de Formulario de creación */
   createForm: (req, res) => {
     res.render("productCreate")
   },
+  /* Logica de creación */
   processCreate: (req, res) => {
     if (req.file) {
       let newProduct = {
@@ -38,28 +47,13 @@ const controllers = {
       res.render('productCreate')
     }
   },
-  productsList: (req, res) => {
-    res.render('products', { products })
-  },
-  delete: (req, res) => {
-    let id = req.params.id
-    let product = products.find(product => product.id == id)
-    let imagePath = path.join(__dirname, '../public/img/products/', product.image)
-    fs.unlink(imagePath, function (err) {
-      if (err) throw err;
-      console.log("Could not delete file!");
-    });
-    let productsUpdate = products.filter((i) => i.id != id);
-    let productsUpdatedJSON = JSON.stringify(productsUpdate, null, " ");
-    fs.writeFileSync(productsFilePath, productsUpdatedJSON);
-    res.redirect("/products");
-  },
+  /* Renderizado de Formulario de edición */
   editForm: (req,res) => {
     let id = req.params.id
     let product = products.find(product => product.id == id);
     res.render('productEdit', { product })
   },
-
+  /* Logica de edición */
   processEdit: (req, res) => {
     let id = req.params.id
     let prodEditing = products.find(product => product.id == id)
@@ -81,7 +75,21 @@ const controllers = {
       return product
     })
     fs.writeFileSync(productsFilePath, JSON.stringify(prodEdited, null, ""))
-    res.redirect('/')
+    res.redirect('/products')
+  },
+  /* Logica de eliminación */
+  delete: (req, res) => {
+    let id = req.params.id
+    let product = products.find(product => product.id == id)
+    let imagePath = path.join(__dirname, '../public/img/products/', product.image)
+    fs.unlink(imagePath, function (err) {
+      if (err) throw err;
+      console.log("Could not delete file!");
+    });
+    let productsUpdate = products.filter((i) => i.id != id);
+    let productsUpdatedJSON = JSON.stringify(productsUpdate, null, " ");
+    fs.writeFileSync(productsFilePath, productsUpdatedJSON);
+    res.redirect("/products");
   },
 }
 module.exports = controllers;

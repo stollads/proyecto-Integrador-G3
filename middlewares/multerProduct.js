@@ -6,7 +6,7 @@ const storage = multer.diskStorage({
     cb(null, path.join(__dirname, `../public/img/products/`))
   },
   filename: function (req, file, cb) {
-    let FileName = Math.round(Math.random() * 1E9) + '-img' + path.extname(file.originalname)
+    let FileName = file.originalname + '-img' + path.extname(file.originalname)
     cb(null, FileName)
   },
 })
@@ -14,3 +14,4 @@ const storage = multer.diskStorage({
 const uploadFile = multer({ storage })
 
 module.exports = uploadFile;
+

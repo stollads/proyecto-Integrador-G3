@@ -9,130 +9,37 @@
 </head>
 <body>
     <header>
-        <%-include('partials/header.ejs')%>
+      <%-include('partials/header.ejs')%>
     </header>
-
+  
     <section class="banner">
-        <img src="/img/banner.jpeg" alt="Banner Woof!">
+      <img src="/img/banner.jpeg" alt="Banner Woof!">
     </section>
     <main>
-        <section>
-            <h2>Productos</h2>
-            <div class="products-container">
-                <article>
-                    <img src="/img/Producto.jpg" alt="">
-                    <div class="product-card">
-                        <i class="fas fa-truck">Reciclado</i>
-                        <div class="flex-row">
-                            <p class="price">$$$</p>
-                            <p class="discount">Descuento</p>
-                        </div>
-                        <h3 class="description">Producto</h3>                
-                    </div>
-                </article>
-                <article>
-                    <img src="/img/Producto.jpg" alt="">
-                    <div class="product-card">
-                        <i class="fas fa-truck"></i>
-                        <div class="flex-row">
-                            <p class="price">$$$</p>
-                            <p class="discount">Descuento</p>
-                        </div>
-                        <h3 class="description">Producto</h3>                
-                    </div>
-                </article>
-                <article>
-                    <img src="/img/Producto.jpg" alt="">
-                    <div class="product-card">
-                        <i class="fas fa-truck"></i>
-                        <div class="flex-row">
-                            <p class="price">$$$</p>
-                            <p class="discount">Descuento</p>
-                        </div>
-                        <h3 class="description">Producto</h3>                
-                    </div>
-                </article>
-                <article>
-                    <img src="/img/Producto.jpg" alt="">
-                    <div class="product-card">
-                        <i class="fas fa-truck"></i>
-                        <div class="flex-row">
-                            <p class="price">$$$</p>
-                            <p class="discount">Descuento</p>
-                        </div>
-                        <h3 class="description">Producto</h3>                
-                    </div>
-                </article>
-                <article>
-                    <img src="/img/Producto.jpg" alt="">
-                    <div class="product-card">
-                        <i class="fas fa-truck"></i>
-                        <div class="flex-row">
-                            <p class="price">$$$</p>
-                            <p class="discount">Descuento</p>
-                        </div>
-                        <h3 class="description">Producto</h3>                
-                    </div>
-                </article>
-                <article>
-                    <img src="/img/Producto.jpg" alt="">
-                    <div class="product-card">
-                        <i class="fas fa-truck"></i>
-                        <div class="flex-row">
-                            <p class="price">$$$</p>
-                            <p class="discount">Descuento</p>
-                        </div>
-                        <h3 class="description">Producto</h3>                
-                    </div>
-                </article>
-                </article>
-                <article>
-                    <img src="/img/Producto.jpg" alt="">
-                    <div class="product-card">
-                        <i class="fas fa-truck"></i>
-                        <div class="flex-row">
-                            <p class="price">$$$</p>
-                            <p class="discount">Descuento</p>
-                        </div>
-                        <h3 class="description">Producto</h3>                
-                    </div>
-                </article>
-                <article>
-                    <img src="/img/Producto.jpg" alt="">
-                    <div class="product-card">
-                        <i class="fas fa-truck"></i>
-                        <div class="flex-row">
-                            <p class="price">$$$</p>
-                            <p class="discount">Descuento</p>
-                        </div>
-                        <h3 class="description">Producto</h3>                
-                    </div>
-                </article>
-            </div>  
-        </section>
-        <h1>SEPARADOR</h1>
-        <section>
-            <div class="products-container">
-                
-                <% products.forEach(product => { %>
-                    <div><%= product.name %></div>
-                    <div>
-                        <img src="/img/products/<%= product.image %>" alt="">
-                        <div>
-                            <h2><%= product.name %></h2>
-                            <h2><%= product.price %></h2>
-                        </div>  
-                    </div>
-                    <% }) %>
-                
+      <section>
+        <h2>Productos</h2>
+        <div class="products-container">
+          <% products.forEach(product => { %>
+          <article>
+            <img src="/img/products/<%= product.image %>" alt="">
+            <div class="product-card">
+              <i class="fas fa-truck"></i>
+              <div class="flex-row">
+                <p class="price"><%= product.price %></p>
+                <p class="discount"><%= product.discount %></p>
+              </div>
+              <h3 class="description"><%= product.name %></h3>
             </div>
-        </section>
+          </article>
+          <% }) %>
+        </div>
+      </section>
     </main>
     <section class="banner">
-        <img src="/img/Slide-Sobre-Nosotros.png" alt="BSobre Nosotros!">
+      <img src="/img/Slide-Sobre-Nosotros.png" alt="BSobre Nosotros!">
     </section>
     <footer>
-        <%-include('partials/footer.ejs')%>
+      <%-include('partials/footer.ejs')%>
     </footer>
-</body>
+  </body>
 </html>

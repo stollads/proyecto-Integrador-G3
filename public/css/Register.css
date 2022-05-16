@@ -188,7 +188,17 @@ div.submit:hover{
 
 /*MAIN*/
 
-
+.formulario{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+} 
+div.buttons{
+    display: block;
+    width: 30%;
+} 
 main.register{
     padding-top: 1.6em;
     width: 82%;
@@ -253,7 +263,7 @@ input{
       margin: 10px;
       background-color: #e7e7e7;
       border-radius: 8px;
-  }
+}
 
  
 

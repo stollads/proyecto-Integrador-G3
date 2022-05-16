@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,9 +8,9 @@
     <title>WOOF! Registro!</title>
     <link rel="stylesheet" href="/css/Register.css">
     <link rel="icon" href="/img/Fondo.png">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
 </head>
+
 <body>
     <header>
         <%-include('partials/header.ejs')%>
@@ -18,25 +19,37 @@ rel="stylesheet" />
         <div class="registro">
             <h3 class="registro">Logeate aqui:</h3>
         </div>
-    
-        <div class="formulario">
-            <form action="/login" method="POST" enctype="multipart/form-data">
-            <input type="email" name="email" id="datos" placeholder="correo@correo.com" required>
-        </div>
-   
-        <div class="password">
-            <input type="password" name="password" placeholder="ingresa tu contraseña"required ><br>
-        </div>
-        
-        <div class="buttons">
-            <input type="submit" value="Crear cuenta" class="btn">
-        </div>
 
+        <% if(typeof errors != 'undefined'){ %>
+            <ul>
+                <% for (let i = 0; i < errors.length; i++) { %>
+                    <li style="color:red"> <%= errors[i].msg %> </li>
+                <% } %> 
+            </ul>
+        <% } %>
+
+        <form action="/" method="POST" class="formulario">
+
+            <input type="email" name="email" id="datos" placeholder="correo@correo.com" required><br>
+            <input type="password" name="password" placeholder="ingresa tu contraseña" required><br>
+
+            <div class="buttons">
+                <input type="submit" value="Iniciar secion" class="btn">
+            </div>
+
+            <% if(typeof errors != 'undefined'){ %>
+                <ul>
+                    <% for (let i = 0; i < errors.length; i++) { %>
+                        <li style="color:red"> <%= errors[i].msg %> </li>
+                    <% } %> 
+                </ul>
+            <% } %>
+
+        </form>
     </main>
-   
     <footer>
         <%-include('partials/footer.ejs')%>
     </footer>
 </body>
-</html>
 
+</html>

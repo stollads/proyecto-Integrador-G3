@@ -19,15 +19,15 @@ const controllers = {
         name: req.body.name,
         email: req.body.email,
         password: req.body.password,
-        avatar: req.body.avatar,
         direccion: req.body.direccion,
+        avatar: req.file.filename,
       }
       users.push(newUser)
       let usersJson = JSON.stringify(users, null, " ")
       fs.writeFileSync(usersFilePath, usersJson)
-      res.redirect('/products')
+      res.redirect('/')
     } else {
-      res.render('users')
+      res.render('register')
     }
   },
 /* Renderizado de Formulario de login */
@@ -35,7 +35,9 @@ const controllers = {
       res.render("login", {title: "login"})
   },
 /* Logica del login de usuario */    
-  processLogin: function(req, res){},
+  processLogin: function(req, res){
+
+  },
 
 /* Renderizado de perfil */  
   profile: function (req, res) {

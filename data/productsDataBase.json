@@ -151,5 +151,14 @@
   "category": "animal",
   "description": "NAshe",
   "image": "Captura de pantalla (51).png-img.png"
+ },
+ {
+  "id": 18,
+  "name": "Goku",
+  "price": "0",
+  "discount": "100",
+  "category": "DBZ",
+  "description": "kamehamema",
+  "image": "wallhaven-j38eem_2560x1440.png-img.png"
  }
 ]

@@ -1,10 +1,46 @@
 [
-    {
-        "id": 1,
-        "name": "Santi",
-        "email":"santipuntieri@gmail.com",
-        "password":"santi",
-        "avatar":"",
-        "direccion":"Yaguaron"
-    }
+ {
+  "id": 1,
+  "name": "Santi",
+  "email": "santipuntieri@gmail.com",
+  "password": "santi",
+  "avatar": "",
+  "direccion": "Yaguaron"
+ },
+ {
+  "id": 2,
+  "name": "asdasd",
+  "email": "asdasd@asd",
+  "password": "asdasd",
+  "direccion": "asdasd"
+ },
+ {
+  "id": 3,
+  "name": "Dasdwaed",
+  "email": "santi.p.083@gmail.com",
+  "password": "afff",
+  "direccion": "affdaf"
+ },
+ {
+  "id": 4,
+  "name": "Eminem",
+  "email": "eminem@gmail.com",
+  "password": "slimshady",
+  "direccion": "Detroit"
+ },
+ {
+  "id": 5,
+  "name": "asdasd",
+  "email": "santi.p.083@gmail.comasdasd",
+  "password": "asdasd",
+  "direccion": "asdasd"
+ },
+ {
+  "id": 6,
+  "name": "Candy Crush",
+  "email": "candy@a",
+  "password": "candycrushsaga",
+  "direccion": "Yankee",
+  "avatar": "candycrush.jpg-img.jpg"
+ }
 ]

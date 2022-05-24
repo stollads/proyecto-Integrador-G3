@@ -2,10 +2,11 @@ var express = require('express');
 var router = express.Router();
 var controllers = require ("../controllers/usersControllers");
 const registerValidator = require('../middlewares/registerValidator');
+var upload = require('../middlewares/multerUsers')
 
 /* Formulario de Registro */
 router.get("/register", controllers.registerForm);
-router.post("/register",controllers.processRegister);
+router.post("/register", upload.single('image'),controllers.processRegister);
 
 /* Login */
 router.get("/login", controllers.loginForm);

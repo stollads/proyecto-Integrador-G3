@@ -28,7 +28,7 @@
             </ul>
         <% } %>
 
-        <form action="/" method="POST" class="formulario">
+        <form action="/users/login" method="POST" class="formulario">
 
             <input type="email" name="email" id="datos" placeholder="correo@correo.com" required><br>
             <input type="password" name="password" placeholder="ingresa tu contraseña" required><br>
@@ -36,15 +36,6 @@
             <div class="buttons">
                 <input type="submit" value="Iniciar secion" class="btn">
             </div>
-
-            <% if(typeof errors != 'undefined'){ %>
-                <ul>
-                    <% for (let i = 0; i < errors.length; i++) { %>
-                        <li style="color:red"> <%= errors[i].msg %> </li>
-                    <% } %> 
-                </ul>
-            <% } %>
-
         </form>
     </main>
     <footer>

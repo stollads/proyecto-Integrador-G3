@@ -1,10 +1,10 @@
 [
     {
         "id": 1,
-        "name": "",
-        "email":"",
-        "password":"",
+        "name": "Santi",
+        "email":"santipuntieri@gmail.com",
+        "password":"santi",
         "avatar":"",
-        "direccion":""
+        "direccion":"Yaguaron"
     }
 ]

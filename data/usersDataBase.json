@@ -42,5 +42,93 @@
   "password": "candycrushsaga",
   "direccion": "Yankee",
   "avatar": "candycrush.jpg-img.jpg"
+ },
+ {
+  "id": 7,
+  "name": "sansan sansan",
+  "email": "santiagho@gmail.com",
+  "password": "asdwdaqd",
+  "direccion": "ananasssss",
+  "avatar": "wallhaven-v93vl5_3840x2160.png-img.png"
+ },
+ {
+  "id": 8,
+  "name": "sansan sansan",
+  "email": "santiagho@gmail.com",
+  "password": "rgfergegreg",
+  "direccion": "ananasssss",
+  "avatar": "wallhaven-v93vl5_3840x2160.png-img.png"
+ },
+ {
+  "id": 9,
+  "name": "sansan sansan",
+  "email": "santiagho@gmail.com",
+  "password": "qwadfd",
+  "direccion": "ananasssss",
+  "avatar": "wallhaven-q2m9or_3840x2160.png-img.png"
+ },
+ {
+  "id": 10,
+  "name": "pluton",
+  "email": "pluton@gmail.com",
+  "password": "pluton",
+  "direccion": "pluton",
+  "avatar": "Pluto_in_True_Color_-_High-Res.jpg-img.jpg"
+ },
+ {
+  "id": 11,
+  "name": "pluton",
+  "email": "pluton@gmail.com",
+  "password": "asdasdasdasdasdasdad",
+  "direccion": "pluton",
+  "avatar": "Pluto_in_True_Color_-_High-Res.jpg-img.jpg"
+ },
+ {
+  "id": 12,
+  "name": "pluton",
+  "email": "pluton@gmail.com",
+  "password": "RESPONDO TODO",
+  "direccion": "pluton",
+  "avatar": "Pluto_in_True_Color_-_High-Res.jpg-img.jpg"
+ },
+ {
+  "id": 13,
+  "name": "qsy",
+  "email": "niidea@gmail.com",
+  "password": "paquequieressabereso",
+  "direccion": "jajasaludos",
+  "avatar": "qsy nose.jpg-img.jpgfunction now() { [native code] }"
+ },
+ {
+  "id": 14,
+  "name": "pato",
+  "email": "pato@gmail.com",
+  "password": "pato",
+  "direccion": "lago",
+  "avatar": "patito.png-img.png1653606147906"
+ },
+ {
+  "id": 15,
+  "name": "stickman",
+  "email": "paloflaco@gmail.com",
+  "password": "purohueso",
+  "direccion": "dibujos",
+  "avatar": "stickman.png-img.png (1653606275110)"
+ },
+ {
+  "id": 16,
+  "name": "stickman",
+  "email": "paloflaco@gmail.com",
+  "password": "asdasd",
+  "direccion": "dibujos",
+  "avatar": "stickman.png (1653606363540).png"
+ },
+ {
+  "id": 17,
+  "name": "messi",
+  "email": "leomessi@gmail.com",
+  "password": "messirve",
+  "direccion": "rosario",
+  "avatar": "messi.jpg (1653606449523).jpg"
  }
 ]

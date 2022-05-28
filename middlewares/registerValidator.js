@@ -1,17 +1,25 @@
 const {body} = require('express-validator');
 
 const registerValidator = [
-    body('email')
+    body('name')
     .isEmpty()
-    .withMessage('Debe ingresar un formato valido de Email'),
+    .withMessage('Nombre: Debe ingresar un nombre')
+    .isLength({max: 30})
+    .withMessage('Nombre: Maximo 30 caracteres'),
+
+    body('email')
+    .isEmail()
+    .withMessage('Email: Debe ingresar un formato valido de Email'),
     
     body('password')
     .isEmpty()
-    .withMessage('Debe ingresar una contraseña'),
+    .withMessage('Contraseña: Debe ingresar una contraseña')
+    .isLength({min: 5})
+    .withMessage('Contraseña: Minimo 5 caracteres'),
    
     body('direccion')
     .isEmpty()
-    .withMessage('Debe ingresar una direccion'),
+    .withMessage('Direccion: Debe ingresar una direccion'),
 ]
 
 module.exports = registerValidator

@@ -6,7 +6,7 @@ const validatorForm = [
     .withMessage('Debe ingresar un formato valido de Email'),
     
     body('password')
-    .notEmpty()
+    .isEmpty()
     .withMessage('Debe ingresar una contraseña'),
 ]
 

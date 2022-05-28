@@ -94,6 +94,9 @@ input.interes{
     padding: 10px   ;
 }
 
+.claseInutil{
+    display: block !important;
+}
 
 
 a{
@@ -194,6 +197,7 @@ div.submit:hover{
     align-items: center;
     justify-content: center;
     align-self: center;
+    flex-direction: column;
 } 
 div.buttons{
     display: block;

@@ -19,18 +19,20 @@ rel="stylesheet" />
     <main class="register">
         <div class="registro">
         <h3 class="registro">Creá tu cuenta aqui:</h3>
-    
+
         <div class="formulario">
 
-            <% if(typeof errors != 'undefined'){ %>
-                <ul>
-                    <% for (let i = 0; i < errors.length; i++) { %>
-                        <li style="color:red"> <%= errors[i].msg %> </li>
-                    <% } %> 
-                </ul>
-            <% } %>
-
             <form action="/users/register" method="POST" enctype="multipart/form-data">
+                
+                <% if(typeof errors != 'undefined'){ %>
+                    <ul class="claseInutil">
+                        <% for (let i = 0; i < errors.length; i++) { %>
+                            <li style="color:red" class="claseInutil">
+                                <%= errors[i].msg %>
+                            </li>
+                        <% } %> 
+                    </ul>
+                <% } %>
 
                 <div class="registro">
                     <input type="text" name="name" id="name" placeholder="nombre y apellido" required minlength="2">

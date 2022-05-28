@@ -32,11 +32,11 @@ const controllers = {
   },
 /* Renderizado de Formulario de login */
     loginForm: function(req, res, next){
-      res.render("login", {title: "login"})
+      res.render("login")
   },
 /* Logica del login de usuario */    
   processLogin: function(req, res){
-
+    
   },
 
 /* Renderizado de perfil */  

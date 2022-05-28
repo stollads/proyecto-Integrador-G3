@@ -7,7 +7,7 @@ const registerValidator = require('../middlewares/registerValidator')
 
 /* GET home page. */
 router.get('/', controllers.index);
-router.post('/users/login', validatorForm, controllers.store);
+router.post('/users/login', validatorForm, controllers.login);
 router.post('/users/register', registerValidator, controllers.register)
 
 module.exports = router;

@@ -1,8 +1,6 @@
 const fs = require("fs");
 const path = require("path");
 
-const productsFilePath = path.join(__dirname, '../data/productsDataBase.json');
-const products = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'));
 const usersFilePath = path.join(__dirname, '../data/usersDataBase.json');
 const users = JSON.parse(fs.readFileSync(usersFilePath, 'utf-8'));
 
@@ -31,17 +29,20 @@ const controllers = {
     }
   },
 /* Renderizado de Formulario de login */
-    loginForm: function(req, res, next){
+  loginForm: function(req, res, next){
       res.render("login")
   },
 /* Logica del login de usuario */    
-  processLogin: function(req, res){
-    
+  processLogin: (userData)=>{
+    let userData = {
+      
+    }
+    users.push(userData)
   },
 
 /* Renderizado de perfil */  
   profile: function (req, res) {
-    // Aquí va la lógica del perfil
+    res.render('profile')
   },
 /* Renderizado de formulario de edición */
   editForm: function (req, res) {

@@ -12,7 +12,7 @@ router.get("/login", controllers.loginForm);
 router.post("/login", controllers.processLogin);
 
 /* Perfil */
-router.get("/profile", controllers.profile);
+router.get("/", controllers.profile);
 
 /* Edición de usuario */
 // router.get("/edit/:id", controllers.editForm);

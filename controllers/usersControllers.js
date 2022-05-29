@@ -7,7 +7,7 @@ const users = JSON.parse(fs.readFileSync(usersFilePath, 'utf-8'));
 const controllers = {
 /* Renderizado de Formulario de registro */
   registerForm: function (req,res,next) {
-    res.render("register")
+    res.render("users/register")
   },
 /* Logica del registro de usuario */  
   processRegister: (req, res)  => {
@@ -25,24 +25,22 @@ const controllers = {
       fs.writeFileSync(usersFilePath, usersJson)
       res.redirect('/')
     } else {
-      res.render('register')
+      res.render('users/register')
     }
   },
 /* Renderizado de Formulario de login */
   loginForm: function(req, res, next){
-      res.render("login")
+      res.render("users/login")
   },
 /* Logica del login de usuario */    
   processLogin: (userData)=>{
-    let userData = {
-      
-    }
+    
     users.push(userData)
   },
 
 /* Renderizado de perfil */  
   profile: function (req, res) {
-    res.render('profile')
+    res.render('users/profile')
   },
 /* Renderizado de formulario de edición */
   editForm: function (req, res) {
@@ -53,8 +51,21 @@ const controllers = {
     // Aquí va la lógica de la edición de usuario
   },
 /* Logica de eliminacion */    
-  delete: function (req, res) {
-    // Aquí va la lógica de eliminación de usuario
-  },
+delete: (id) => {
+  //let id = req.params.id
+  let user = users.find(user => user.id == id)
+  let imagePath = path.join(__dirname, '../public/img/users/', user.avatar)
+  fs.unlink(imagePath, function (err) {
+    if (err) throw err;
+    console.log("Could not delete file!");
+  });
+  let usersUpdate = users.filter((i) => i.id != id);
+  let usersUpdatedJSON = JSON.stringify(usersUpdate, null, " ");
+  fs.writeFileSync(usersFilePath, usersUpdatedJSON);
+  //res.redirect("/users"); 
+},
 }
 module.exports = controllers;
+
+/* PARA COMPROBAR SI FUNCIONAN
+controllers.delete(17) */

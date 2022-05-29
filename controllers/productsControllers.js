@@ -9,23 +9,23 @@ const controllers = {
   /* Renderizado de Listado de productos */
   productsList: (req, res) => {
     const products = JSON.parse(fs.readFileSync(productsFilePath, "utf-8"));
-    res.render('products', { products })
+    res.render('products/products', { products })
   },
   /* Renderizado de carrito de compras */
   carrito: function (req, res, next) {
-    res.render("cart", { title: "carrito" })
+    res.render("products/cart", { title: "carrito" })
   },
   /* Renderizado de Detalle de un producto */
   productDetail: (req, res) => {
     let id = req.params.id
     let product = products.find(product => product.id == id);
-    res.render('productDetail', {
+    res.render('products/productDetail', {
       product
     })
   },
   /* Renderizado de Formulario de creación */
   createForm: (req, res) => {
-    res.render("productCreate")
+    res.render("products/productCreate")
   },
   /* Logica de creación */
   processCreate: (req, res) => {
@@ -44,14 +44,14 @@ const controllers = {
       fs.writeFileSync(productsFilePath, productsJson)
       res.redirect('/products')
     } else {
-      res.render('productCreate')
+      res.render('products/productCreate')
     }
   },
   /* Renderizado de Formulario de edición */
   editForm: (req,res) => {
     let id = req.params.id
     let product = products.find(product => product.id == id);
-    res.render('productEdit', { product })
+    res.render('products/productEdit', { product })
   },
   /* Logica de edición */
   processEdit: (req, res) => {

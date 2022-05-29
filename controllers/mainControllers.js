@@ -12,13 +12,13 @@ const controllers = {
   login:  function(req,res,next){
     let errors = validationResult(req);
     if(!errors.isEmpty()){
-      return res.render('login',{errors: errors.errors})
+      return res.render('users/login',{errors: errors.errors})
     }
   },
   register:  function(req,res,next){
     let errors = validationResult(req);
     if(!errors.isEmpty()){
-      return res.render('register',{errors: errors.errors})
+      return res.render('users/register',{errors: errors.errors})
     }
   }
 }

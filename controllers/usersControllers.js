@@ -11,6 +11,7 @@ const controllers = {
   },
 /* Logica del registro de usuario */  
   processRegister: (req, res)  => {
+    console.log(req.body)
     if (req.file) {
       let newUser = {
         id: users[users.length - 1].id + 1,
@@ -66,6 +67,9 @@ delete: (id) => {
 },
 }
 module.exports = controllers;
+
+
+
 
 /* PARA COMPROBAR SI FUNCIONAN
 controllers.delete(17) */

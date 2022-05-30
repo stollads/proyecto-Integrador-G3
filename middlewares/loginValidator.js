@@ -1,6 +1,6 @@
 const {body} = require('express-validator');
 
-const validatorForm = [
+const loginValidator = [
     body('email')
     .isEmail()
     .withMessage('Debe ingresar un formato valido de Email'),
@@ -10,4 +10,4 @@ const validatorForm = [
     .withMessage('Debe ingresar una contraseña'),
 ]
 
-module.exports = validatorForm
+module.exports = loginValidator

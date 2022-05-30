@@ -138,5 +138,45 @@
   "password": "iphone",
   "direccion": "yanke",
   "avatar": "iphone.jpg(1653871090772).jpg"
+ },
+ {
+  "id": 19,
+  "name": "santiago puntieri",
+  "email": "santi.p.083@gmail.com",
+  "password": "asdawds",
+  "direccion": "marconi 47 bis",
+  "avatar": "iphone.jpg(1653947057074).jpg"
+ },
+ {
+  "id": 20,
+  "name": "santiago puntieri",
+  "email": "asdadw@a",
+  "password": "as",
+  "direccion": "marconi 47 bis",
+  "avatar": "iphone.jpg(1653947144946).jpg"
+ },
+ {
+  "id": 21,
+  "name": "as",
+  "email": "asd@a",
+  "password": "asd",
+  "direccion": "marconi 47 bis",
+  "avatar": "iphone.jpg(1653948419354).jpg"
+ },
+ {
+  "id": 22,
+  "name": "san",
+  "email": "santi.p.083@a",
+  "password": "asd",
+  "direccion": "as",
+  "avatar": "messi.jpg(1653948456762).jpg"
+ },
+ {
+  "id": 23,
+  "name": "san",
+  "email": "santi.p.083@a",
+  "password": "as",
+  "direccion": "as",
+  "avatar": "messi.jpg(1653948477921).jpg"
  }
 ]

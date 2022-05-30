@@ -130,5 +130,13 @@
   "password": "messirve",
   "direccion": "rosario",
   "avatar": "messi.jpg (1653606449523).jpg"
+ },
+ {
+  "id": 18,
+  "name": "Iphone",
+  "email": "iphone@gmail.com",
+  "password": "iphone",
+  "direccion": "yanke",
+  "avatar": "iphone.jpg(1653871090772).jpg"
  }
 ]

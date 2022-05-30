@@ -4,8 +4,8 @@ const registerValidator = [
     body('name')
     .isEmpty()
     .withMessage('Nombre: Debe ingresar un nombre')
-    .isLength({max: 30})
-    .withMessage('Nombre: Maximo 30 caracteres'),
+    .isLength({min: 5})
+    .withMessage('Nombre: Minimo caracteres'),
 
     body('email')
     .isEmail()

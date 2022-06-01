@@ -178,5 +178,13 @@
   "password": "as",
   "direccion": "as",
   "avatar": "messi.jpg(1653948477921).jpg"
+ },
+ {
+  "id": 24,
+  "name": "santiago puntieri",
+  "email": "santi.p.083@gmail.com",
+  "password": "asdawdad",
+  "direccion": "marconi 47 bis",
+  "avatar": "iphone.jpg(1654123248647).jpg"
  }
 ]

@@ -186,5 +186,45 @@
   "password": "asdawdad",
   "direccion": "marconi 47 bis",
   "avatar": "iphone.jpg(1654123248647).jpg"
+ },
+ {
+  "id": 25,
+  "name": "santiago puntieri",
+  "email": "santidawdadap.083@gmail.com",
+  "password": "wdaasdaw",
+  "direccion": "marconi 47 bis",
+  "avatar": "iphone.jpg(1654128613358).jpg"
+ },
+ {
+  "id": 26,
+  "name": "santiago puntieri",
+  "email": "eminem@gmail.com",
+  "password": "dawdadawd",
+  "direccion": "marconi 47 bis",
+  "avatar": "stickman.png(1654130008345).png"
+ },
+ {
+  "id": 27,
+  "name": "santiago puntieri",
+  "email": "eminem@gmail.com",
+  "password": "awdadawdawd",
+  "direccion": "marconi 47 bis",
+  "avatar": "iphone.jpg(1654130250882).jpg"
+ },
+ {
+  "id": 28,
+  "name": "santiago puntieri",
+  "email": "asdasdasd@g.com",
+  "password": "adwdawd",
+  "direccion": "marconi 47 bis",
+  "avatar": "messi.jpg(1654130490655).jpg"
+ },
+ {
+  "id": 29,
+  "name": "santiago puntieri",
+  "email": "eminem@gmail.com",
+  "password": "awdadawd",
+  "direccion": "marconi 47 bis",
+  "avatar": "messi.jpg(1654130815285).jpg"
  }
 ]

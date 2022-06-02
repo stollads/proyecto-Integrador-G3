@@ -3,11 +3,12 @@ const {body} = require('express-validator');
 const loginValidator = [
     body('email')
     .isEmail()
-    .withMessage('Debe ingresar un formato valido de Email'),
-    
+    .withMessage('Email: Debe ingresar un formato valido de Email'),
     body('password')
-    .isEmpty()
-    .withMessage('Debe ingresar una contraseña'),
+    .notEmpty()
+    .withMessage('Contraseña: Debe ingresar una contraseña')
+    .isLength({min: 5})
+    .withMessage('Contraseña: Minimo 5 caracteres'),
 ]
 
 module.exports = loginValidator

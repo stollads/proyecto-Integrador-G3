@@ -33,7 +33,13 @@ rel="stylesheet" />
                         <% } %> 
                     </ul>
                 <% } %>
- 
+                
+                <% if (locals.errors && errors.email) { %>
+                    <li class="text-danger" style="color:red">
+                        <%= errors.email.msg %>
+                    </li>
+                <% } %>
+
                 <div class="registro">
                     <input type="text" name="name" id="name" placeholder="nombre y apellido">
                     <input type="email" name="email" id="email" placeholder="correo@correo.com" >

@@ -20,25 +20,39 @@
             <h3 class="registro">Logeate aqui:</h3>
         </div>
 
-        <% if(typeof errors != 'undefined'){ %>
-            <ul>
-                <% for (let i = 0; i < errors.length; i++) { %>
-                    <li style="color:red"> <%= errors[i].msg %> </li>
-                <% } %> 
-            </ul>
-        <% } %>
+        
+    
+        <form action="/users/login" method="POST" class="formulario" >
 
-        <form action="/users/login" method="POST" class="formulario" enctype="multipart/form-data">
+            <% if(typeof errors != 'undefined'){ %>
+                <ul>
+                    <% for (let i = 0; i < errors.length; i++) { %>
+                        <li style="color:red"> <%= errors[i].msg %> </li>
+                    <% } %> 
+                </ul>
+            <% } %>
+    
+            
+            <input type="email" name="email" id="email" placeholder="correo@correo.com" >
+            <% if (locals.errors && errors.email) { %>
+                <div class="text-danger" style="color:red">
+                    <%= errors.email.msg %>
+                </div>
+            <% } %>
 
-            <input type="email" name="email" id="datos" placeholder="correo@correo.com" >
-            <input type="password" name="password" placeholder="ingresa tu contraseña" >
+            <input type="password" name="password" id="password" placeholder="ingresa tu contraseña" >
+            <% if (locals.errors && errors.password/*.email*/) { %>
+                <div class="text-danger" style="color:red">
+                    <%= errors.password/*.email*/.msg %>
+                </div>
+            <% } %>
             
             <label for="remember" class="remember">Recordame
                 <input type="checkbox" name="remember" id="remember">
             </label>
             
             <div class="buttons">
-                <input type="submit" value="Iniciar secion" class="btn">
+                <input type="submit" value="Iniciar Sesion" class="btn">
             </div>
         </form>
     </main>

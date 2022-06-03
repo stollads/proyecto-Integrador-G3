@@ -2,7 +2,9 @@ const fs = require("fs");
 const path = require("path");
 const usersFilePath = path.join(__dirname, '../data/usersDataBase.json');
 const users = JSON.parse(fs.readFileSync(usersFilePath, 'utf-8'));
-const { validationResult } = require("express-validator");
+const { validationResult, body } = require("express-validator");
+const User = require("../models/Users");
+ 
 const controllers = {
   /* Renderizado de Formulario de registro */
   registerForm: function (req, res, next) {
@@ -18,17 +20,14 @@ const controllers = {
       });
     }
 
-    const userInDB = (field, text) => {
-      let userFound = users.find(oneUser => oneUser[field] === text)
-      return userFound('email', req.body.email)
-    }
+    const userInDB = User.findByField('email', req.body.email)
     if (userInDB) {
       const errors = validationResult(req);
       if (errors.isEmpty()) {
         return res.render("users/register", {
           errors: {
             email: {
-              msg: 'este mail'
+              msg: 'Este email ya esta registado'
             }
           },
           oldData: req.body
@@ -59,12 +58,42 @@ const controllers = {
     res.render("users/login")
   },
   /* Logica del login de usuario */
-  processLogin: (userData) => {
-    let errors = validationResult(req);
+  processLogin: (req, res,next) => {
+    const errors = validationResult(req);
     if (!errors.isEmpty()) {
-      return res.render("users/login", { errors: errors.errors });
+      return res.render("users/login", {
+        errors: errors.errors,
+        oldData: req.body
+      });
     }
-    users.push(userData)
+
+    const userToLogin = User.findByField('email', req.body.email)
+    if (userToLogin) {
+      if(userToLogin.password == req.body.password){
+        return res.redirect('/users/profile')
+      }
+      return res.render('users/login', {
+        errors: {
+          password: {
+            msg: 'Contraseña incorrecta'
+          }
+        },
+        /* PARA SEGURIDAD
+        errors: {
+          email: {
+            msg: 'Credenciales invalidas'
+          }
+        } */
+      });
+    }
+
+    return res.render('users/login', {
+      errors: {
+        email: {
+          msg: 'Email no registrado'
+        }
+      }
+    })
   },
   /* Renderizado de perfil */
   profile: function (req, res) {

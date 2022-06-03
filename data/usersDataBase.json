@@ -226,5 +226,29 @@
   "password": "awdadawd",
   "direccion": "marconi 47 bis",
   "avatar": "messi.jpg(1654130815285).jpg"
+ },
+ {
+  "id": 30,
+  "name": "santiago puntieri",
+  "email": "santi.p.083@adwawdawd.com",
+  "password": "adawdawd",
+  "direccion": "marconi 47 bis",
+  "avatar": "messi.jpg(1654207870056).jpg"
+ },
+ {
+  "id": 31,
+  "name": "santiago puntieri",
+  "email": "santi.p.083@gmail.com",
+  "password": "awdawdad",
+  "direccion": "marconi 47 bis",
+  "avatar": "iphone.jpg(1654208184825).jpg"
+ },
+ {
+  "id": 32,
+  "name": "ananana",
+  "email": "ananana@gmail.com",
+  "password": "ananan",
+  "direccion": "annana",
+  "avatar": "Captura de pantalla (5).png(1654214256509).png"
  }
 ]

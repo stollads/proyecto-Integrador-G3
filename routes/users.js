@@ -11,10 +11,10 @@ router.post("/register", upload.single('avatar'), registerValidator, controllers
 
 /* Login */
 router.get("/login" , controllers.loginForm);
-router.post("/login", loginValidator,  controllers.processLogin);
+router.post("/login", /* loginValidator, */ controllers.processLogin);
 
 /* Perfil */
-router.get("/", controllers.profile);
+router.get("/profile", controllers.profile);
 
 /* Edición de usuario */
 // router.get("/edit/:id", controllers.editForm);

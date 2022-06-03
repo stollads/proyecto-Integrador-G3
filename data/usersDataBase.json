@@ -6,34 +6,39 @@
   "password": "santi",
   "avatar": "",
   "direccion": "Yaguaron"
+  
  },
  {
   "id": 2,
   "name": "asdasd",
   "email": "asdasd@asd",
   "password": "asdasd",
-  "direccion": "asdasd"
+  "direccion": "asdasd",
+  "avatar": "candycrush.jpg-img.jpg"
  },
  {
   "id": 3,
-  "name": "Dasdwaed",
+  "name": "Santiago Puntieri",
   "email": "santi.p.083@gmail.com",
   "password": "afff",
-  "direccion": "affdaf"
+  "direccion": "Yaguaron",
+  "avatar": "candycrush.jpg-img.jpg"
  },
  {
   "id": 4,
   "name": "Eminem",
   "email": "eminem@gmail.com",
   "password": "slimshady",
-  "direccion": "Detroit"
+  "direccion": "Detroit",
+  "avatar": "candycrush.jpg-img.jpg"
  },
  {
   "id": 5,
   "name": "asdasd",
   "email": "santi.p.083@gmail.comasdasd",
   "password": "asdasd",
-  "direccion": "asdasd"
+  "direccion": "asdasd",
+  "avatar": "candycrush.jpg-img.jpg"
  },
  {
   "id": 6,

@@ -70,6 +70,8 @@ const controllers = {
     const userToLogin = User.findByField('email', req.body.email)
     if (userToLogin) {
       if(userToLogin.password == req.body.password){
+        //delete userToLogin.password; PARA SEGURIDAD
+        req.session.userLogged = userToLogin
         return res.redirect('/users/profile')
       }
       return res.render('users/login', {
@@ -97,7 +99,14 @@ const controllers = {
   },
   /* Renderizado de perfil */
   profile: function (req, res) {
-    res.render('users/profile')
+    res.render('users/profile',{
+      user: req.session.userLogged
+    })
+  },
+  /* Logica de logout */
+  logout: function(req,res){
+    req.session.destroy();
+    return res.redirect('/')
   },
   /* Renderizado de formulario de edición */
   editForm: function (req, res) {

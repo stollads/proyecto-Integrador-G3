@@ -129,7 +129,6 @@ main section h3 {
 }
   
 article div.product-card {
-    width: 15%;
     border: 1px solid var(--blanco);
     padding: 15px;
     position: relative;

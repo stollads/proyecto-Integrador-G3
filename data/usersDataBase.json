@@ -6,7 +6,6 @@
   "password": "santi",
   "avatar": "",
   "direccion": "Yaguaron"
-  
  },
  {
   "id": 2,
@@ -255,5 +254,29 @@
   "password": "ananan",
   "direccion": "annana",
   "avatar": "Captura de pantalla (5).png(1654214256509).png"
+ },
+ {
+  "id": 33,
+  "name": "ANANA",
+  "email": "anana@haha.com",
+  "password": "$2a$10$iDfFOBBugv2ca59uAta2Me1bbH1y.eJAYtHVmGe7CvPSkLs5AM29S",
+  "direccion": "anana",
+  "avatar": "Captura de pantalla (1).png(1654252908449).png"
+ },
+ {
+  "id": 34,
+  "name": "Flowww",
+  "email": "flowww@gmail.com",
+  "password": "$2a$10$0A2PYsg15wMcegzZLFsPUOQGkIkyn24fhK4f5MnemztB6NNO6i6ve",
+  "direccion": "Flowww",
+  "avatar": "Eminem.png(1654253027490).png"
+ },
+ {
+  "id": 35,
+  "name": "Maradona",
+  "email": "maradona@gmail.com",
+  "password": "$2a$10$eFDu0jfwiuKEVROqjvSLzeWWajG6MubU3hZjjqAeFD3R8bEVOkfdW",
+  "direccion": "Maradona",
+  "avatar": "maradona.jpg(1654253111392).jpg"
  }
 ]

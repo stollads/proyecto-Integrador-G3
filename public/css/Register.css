@@ -28,7 +28,7 @@
 /*BOOODDYY*/
 
 body{
-    background-color: #d9d4ff;
+    background-color: --var(--blanco-medio);
 }
 
 /*HEADER*/
@@ -98,6 +98,14 @@ input.interes{
     display: block !important;
 }
 
+.registro{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+}
 
 a{
     font-family: var(--mochipop);
@@ -201,10 +209,10 @@ div.submit:hover{
 } 
 div.buttons{
     display: block;
-    width: 30%;
+    width: 100%;
 } 
 main.register{
-    padding-top: 1.6em;
+    
     width: 82%;
 
 }
@@ -239,6 +247,8 @@ ul#output.redes{
 
 
 }
+.checkbox input:checked ~ .checkmark:after
+
 h3.ingreso{
     font-size: var(--text-md);
     width: 90%;
@@ -246,6 +256,11 @@ h3.ingreso{
     text-align: center;
     margin: 0 auto;
     
+}
+
+.cuenta{
+    display: flex;
+    justify-content: center;
 }
 
 h4{
@@ -296,15 +311,20 @@ div.buttons{
     .btn:hover{
         transition: 0.5s ease;
    background-color:  var(--azul-fuerte);
-    cursor: pointer;}
+    cursor: pointer;
+}
     
-
-
-
+.remember{
+    margin: 0;
+}
 
 label{
-    padding-left:5px ;
+    padding-left: 5px;
     font-size: 82%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: nowrap;
 }
 
 /*FOOTER*/

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,54 +8,76 @@
     <title>WOOF! Registro!</title>
     <link rel="stylesheet" href="/css/header.css">
     <link rel="icon" href="/img/Fondo.png">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
 </head>
+
 <body>
     <header>
-        <div class="atraccion">
-            <a href="/">
-                <img class="superior" src="/img/Logo vertical.png" alt="Logo de Woof!">
-            </a>
-             
-            <nav>
+        <nav>
+            <div class="atraccion">
+                <a href="/">
+                    <img class="superior" src="/img/Logo vertical.png" alt="Logo de Woof!">
+                </a>
 
-                <ul>
                 
-                    <li>
-                        <a href="/users/login" class="nav">Ingresá <i class="fas fa-sign-in-alt"></i></a>
-                    </li>
-                    <li>
-                        <a href="/users/register" class="nav">Registrate<i class="fas fa-sign-in-alt"></i></a>
-                    </li>
-                    <li>
-                        <a href="/products/create" class="nav" >Crea un producto
-                            <i class="fas fa-shopping-basket"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="/products/edit/" class="nav">Edita un producto
-                            <i class="fas fa-shopping-basket"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="/products/detail/" class="nav">Detalle producto
-                            <i class="fas fa-shopping-basket"></i>
-                        </a>
-                    </li>
-                </ul>
-            </nav>
+                    <% if (locals.isLogged) { %>
+                        <ul class="items">
+                            <li>
+                                <a href="/products/create" class="nav">Crea un producto
+                                    <i class="fas fa-shopping-basket"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/products/edit/" class="nav">Edita un producto
+                                    <i class="fas fa-shopping-basket"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/products/detail/" class="nav">Detalle producto
+                                    <i class="fas fa-shopping-basket"></i>
+                                </a>
+                            </li>
+                        </ul>
+                        <div>
+                            <h3 class="usuario"> 
+                                <a href="/users/profile">
+                                    <img src="../img/users/<%= locals.userLogged.avatar %>" alt="Avatar" style="max-width: 100px;display: block;border-radius: 50%;border: 5px solid #002050;">
+                                </a>
+                                <a href="/users/profile" class="usuario" style="margin: 10px;">
+                                    <%= locals.userLogged.name %>
+                                </a>
+                                
+                            </h3>
+                        </div>
 
-        </div>
+                    <% }else { %>
+                        <ul class="items">
+                            <li>
+                                <a href="/users/login" class="nav">Ingresá <i class="fas fa-sign-in-alt"></i></a>
+                            </li><br>
+                            <li>
+                                <a href="/users/register" class="nav">Registrate<i class="fas fa-sign-in-alt"></i></a>
+                            </li>
+                        </ul>
+                    <% } %>
+
+
+                
+
+
+            </div>
+        </nav>
+
         <!--  BUSCADOR
         <div class="buscador">
         <div class="form" action="#" method="GET">
             <input type="text" class="input" placeholder="Buscar">
             <div class="submit"><i class="fa fa-search"></i></div>
         </div> -->
-    
-    </div>
-    
+
+        </div>
+
     </header>
 </body>
+
 </html>

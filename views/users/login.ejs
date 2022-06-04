@@ -31,8 +31,8 @@
                     <% } %> 
                 </ul>
             <% } %>
-    
-            
+            <div class="formulario">
+            <div>Correo electrionico:</div>
             <input type="email" name="email" id="email" placeholder="correo@correo.com" >
             <% if (locals.errors && errors.email) { %>
                 <div class="text-danger" style="color:red">
@@ -40,14 +40,14 @@
                 </div>
             <% } %>
 
-            <input type="password" name="password" id="password" placeholder="ingresa tu contraseña" >
+            <div>Contraseña:</div><input type="password" name="password" id="password" placeholder="ingresa tu contraseña" >
             <% if (locals.errors && errors.password/*.email*/) { %>
                 <div class="text-danger" style="color:red">
                     <%= errors.password/*.email*/.msg %>
                 </div>
             <% } %>
             
-            <label for="remember" class="remember">Recordame
+            <label for="remember" class="remember" style="width: 150px;">Recordame
                 <input type="checkbox" name="remember" id="remember">
             </label>
             
@@ -55,10 +55,10 @@
                 <input type="submit" value="Iniciar Sesion" class="btn">
             </div>
 
-            <div>
+            <div class="cuenta" style="margin: 10px;">
                 No tenes cuenta?<a href="/users/register">Registrate</a>
             </div>
-            
+        </div>
         </form>
     </main>
     <footer>

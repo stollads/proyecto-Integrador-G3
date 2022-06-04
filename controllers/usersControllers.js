@@ -4,7 +4,8 @@ const usersFilePath = path.join(__dirname, '../data/usersDataBase.json');
 const users = JSON.parse(fs.readFileSync(usersFilePath, 'utf-8'));
 const { validationResult, body } = require("express-validator");
 const User = require("../models/Users");
- 
+const bcryptjs = require('bcryptjs')
+
 const controllers = {
   /* Renderizado de Formulario de registro */
   registerForm: function (req, res, next) {
@@ -40,14 +41,14 @@ const controllers = {
         id: users[users.length - 1].id + 1,
         name: req.body.name,
         email: req.body.email,
-        password: req.body.password,
+        password: bcryptjs.hashSync(req.body.password, 10),
         direccion: req.body.direccion,
         avatar: req.file.filename,
       }
       users.push(newUser)
       let usersJson = JSON.stringify(users, null, " ")
       fs.writeFileSync(usersFilePath, usersJson)
-      res.redirect('/')
+      res.redirect('/users/login')
       return newUser
     } else {
       res.render('users/register')
@@ -58,7 +59,7 @@ const controllers = {
     res.render("users/login")
   },
   /* Logica del login de usuario */
-  processLogin: (req, res,next) => {
+  processLogin: (req, res, next) => {
     const errors = validationResult(req);
     if (!errors.isEmpty()) {
       return res.render("users/login", {
@@ -69,9 +70,14 @@ const controllers = {
 
     const userToLogin = User.findByField('email', req.body.email)
     if (userToLogin) {
-      if(userToLogin.password == req.body.password){
+      let userPassword = bcryptjs.compare(req.body.password, userToLogin.password)
+      if (userPassword) {
         //delete userToLogin.password; PARA SEGURIDAD
         req.session.userLogged = userToLogin
+        if (req.body.remember) {
+          console.log(req.body.remember === 'on')
+          res.cookie('userEmail', req.body.email, { maxAge: (1000 * 60) * 2 })
+        }
         return res.redirect('/users/profile')
       }
       return res.render('users/login', {
@@ -99,12 +105,13 @@ const controllers = {
   },
   /* Renderizado de perfil */
   profile: function (req, res) {
-    res.render('users/profile',{
+    res.render('users/profile', {
       user: req.session.userLogged
     })
   },
   /* Logica de logout */
-  logout: function(req,res){
+  logout: function (req, res) {
+    res.clearCookie('userEmail')
     req.session.destroy();
     return res.redirect('/')
   },

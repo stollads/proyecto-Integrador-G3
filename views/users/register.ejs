@@ -22,7 +22,7 @@ rel="stylesheet" />
 
         <div class="formulario">
 
-            <form action="/users/register" method="POST" enctype="multipart/form-data">
+            <form action="/users/register" method="POST" enctype="multipart/form-data" class="formulario">
                 
                 <% if(typeof errors != 'undefined'){ %>
                     <ul class="claseInutil">
@@ -41,15 +41,19 @@ rel="stylesheet" />
                 <% } %>
 
                 <div class="registro">
-                    <input type="text" name="name" id="name" placeholder="nombre y apellido">
-                    <input type="email" name="email" id="email" placeholder="correo@correo.com" >
-                    <input type="password" name="password" id="password" placeholder="Contraseña" >
-                    <input type="text" name="direccion" id="direccion" placeholder="Direccion" >
-                    <input type="file" name="avatar" id="avatar" placeholder="Avatar" >
+                    <div>Nombre de usuario:</div><input type="text" name="name" id="name" placeholder="Nombre y apellido">
+                    <div>Correo electrionico:</div><input type="email" name="email" id="email" placeholder="Correo@correo.com" >
+                    <div>Contraseña:</div><input type="password" name="password" id="password" placeholder="Contraseña" >
+                    <div>Direccion:</div><input type="text" name="direccion" id="direccion" placeholder="Direccion" >
+                    <div>Avatar:</div><input type="file" name="avatar" id="avatar" placeholder="Avatar" >
                 </div> 
 
                 <div class="buttons">
                     <input type="submit" value="Crear cuenta" class="btn">
+                </div>
+
+                <div class="cuenta">
+                    Ya tenes cuenta?<a href="/users/login">Logueate</a>
                 </div>
             
             </form>

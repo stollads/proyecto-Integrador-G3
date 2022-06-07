@@ -278,5 +278,13 @@
   "password": "$2a$10$eFDu0jfwiuKEVROqjvSLzeWWajG6MubU3hZjjqAeFD3R8bEVOkfdW",
   "direccion": "Maradona",
   "avatar": "maradona.jpg(1654253111392).jpg"
+ },
+ {
+  "id": 36,
+  "name": "melocoton",
+  "email": "melocoton@gmail.com",
+  "password": "$2a$10$cyzgQhRzS/S5jnf1Sprt7eYcCrYPwdniXaABbyjCk1bceVpjeamhC",
+  "direccion": "melocoton",
+  "avatar": "Captura de pantalla (1).png(1654561820378).png"
  }
 ]

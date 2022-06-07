@@ -70,7 +70,10 @@ const controllers = {
 
     const userToLogin = User.findByField('email', req.body.email)
     if (userToLogin) {
-      let userPassword = bcryptjs.compare(req.body.password, userToLogin.password)
+      console.log(req.body.password);
+      console.log(userToLogin.password);
+      let userPassword = bcryptjs.compareSync(req.body.password, userToLogin.password)
+      console.log(userPassword)
       if (userPassword) {
         //delete userToLogin.password; PARA SEGURIDAD
         req.session.userLogged = userToLogin

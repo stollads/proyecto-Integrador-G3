@@ -1,38 +1,37 @@
 module.exports = (sequelize, DataTypes) => {
-    let alias = 'Compra'
+    let alias = 'Users'
     let cols = {
-        idCompra: {
+        idUser: {
             type: DataTypes.INTEGER,
             primaryKey: true,
             autoIncrement: true,
         },
-        idUser: {
+        name: {
             type: DataTypes.STRING,
-            foreingKey: true,
         },
-        idProduct: {
+        email: {
             type: DataTypes.STRING,
-            foreingKey: true,
         },
-        fechaCompra: {
+        password: {
             type: DataTypes.STRING,
-            createdAt: DataTypes.DATE
+        },
+        direccion: {
+            type: DataTypes.STRING,
+        },
+        avatar: {
+            type: DataTypes.STRING(250),
         },
     }
     let config = {
-        tableName: 'compra',
-        createdAt: "created_at",
-        updatedAt: "updated_at",
-        deletedAt: "deleted_at",
-        paranoid: true
+        tableName: 'users',
+        timestamps: false
     }
     let Product = sequelize.define(alias, cols, config)
     /* Product.associate = function (models) {
         Product.belongsToMany(models.User, {
-            as: 'products',
-            as: 'users',
-            foreingKey: 'idProduct',
-            otherKey: "idUsers",
+            as: 'carts_user',
+            foreingKey: 'product_id',
+            otherKey: "user_id",
             through: "Cartproduct"
         })
     } */

@@ -81,6 +81,7 @@ const controllers = {
   delete: (req, res) => {
     let id = req.params.id
     let product = products.find(product => product.id == id)
+    console.log(product)
     let imagePath = path.join(__dirname, '../public/img/products/', product.image)
     fs.unlink(imagePath, function (err) {
       if (err) throw err;

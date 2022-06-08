@@ -26,7 +26,7 @@ router.get("/logout", controllers.logout);
 // router.put("/edit/:id", controllers.processEdit);
 
 /* Eliminación de usuario */
-// router.get("/delete", controllers.delete);
+router.get("/delete", controllers.delete);
 
 
 module.exports = router;

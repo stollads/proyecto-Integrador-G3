@@ -70,10 +70,7 @@ const controllers = {
 
     const userToLogin = User.findByField('email', req.body.email)
     if (userToLogin) {
-      console.log(req.body.password);
-      console.log(userToLogin.password);
       let userPassword = bcryptjs.compareSync(req.body.password, userToLogin.password)
-      console.log(userPassword)
       if (userPassword) {
         //delete userToLogin.password; PARA SEGURIDAD
         req.session.userLogged = userToLogin
@@ -130,7 +127,7 @@ const controllers = {
   delete: (req, res) => {
     let id = req.params.id
     let user = users.find(user => user.id == id)
-    let imagePath = path.join(__dirname, '../public/img/users/', user.avatar)
+    let imagePath = path.join(__dirname, '../public/img/users/',)
     fs.unlink(imagePath, function (err) {
       if (err) throw err;
       console.log("Could not delete file!");
@@ -138,7 +135,7 @@ const controllers = {
     let usersUpdate = users.filter((i) => i.id != id);
     let usersUpdatedJSON = JSON.stringify(usersUpdate, null, " ");
     fs.writeFileSync(usersFilePath, usersUpdatedJSON);
-    res.redirect("/users");
+    res.redirect("/");
   },
 }
 module.exports = controllers;

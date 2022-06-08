@@ -286,5 +286,13 @@
   "password": "$2a$10$cyzgQhRzS/S5jnf1Sprt7eYcCrYPwdniXaABbyjCk1bceVpjeamhC",
   "direccion": "melocoton",
   "avatar": "Captura de pantalla (1).png(1654561820378).png"
+ },
+ {
+  "id": 37,
+  "name": "Santi Puntieri",
+  "email": "santiagopuntieri@gmail.com",
+  "password": "$2a$10$sGsJeJXk2eQdAeki7E9hUu9IZQBUIxYduVA0072XkelFgypX8k/1m",
+  "direccion": "Marconi, barrio Yaguaron",
+  "avatar": "Santi.jpg(1654622532078).jpg"
  }
 ]
